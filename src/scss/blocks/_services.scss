@@ -1,6 +1,38 @@
 .services {
   margin-top: 100px;
-  color: $textColor
+  color: $textColor;
+  &__price {
+    background: #FFFFFF;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 20px 60px;
+  }
+  &__name {
+    color:#0F2F2E;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 40px 60px 20px;
+  }
+  &__text:nth-child(2),
+  &__text:nth-child(5),
+  &__text:nth-child(8),
+  &__text--center {
+    text-align: center;
+  }
+  &__text:nth-child(3n) {
+    margin-left: 20px;
+  }
+  &__text {
+    padding: 6px;
+  }
+  &__text:nth-child(1),
+  &__text:nth-child(4),
+  &__text:nth-child(7) {
+    text-decoration: underline;
+  }
+  &__summary__img {
+    margin-right: 35px;
+  }
 }
 
 details > summary {
@@ -8,7 +40,20 @@ details > summary {
   border-radius: 40px;
   list-style-type: none;
   background-color: $accentColor;
-  margin-top: 10px;
-  padding: 25px 0 25px 60px;}
+  margin-top: 2px;
+  padding: 25px 0 25px 60px;
+  display: flex;
+  justify-content: space-between;}
 
-  
+  details > summary::-webkit-details-marker {
+    display: none;
+  }
+  details[open] {
+    img {
+      transform: rotate(180deg);
+      -webkit-transform: rotate(180deg);
+      -moz-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+      -o-transform: rotate(180deg);
+    }
+  }

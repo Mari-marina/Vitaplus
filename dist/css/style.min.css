@@ -661,12 +661,53 @@ button {
   margin-top: 100px;
   color: #0F2F2E;
 }
+.services__price {
+  background: #FFFFFF;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 20px 60px;
+}
+.services__name {
+  color: #0F2F2E;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 40px 60px 20px;
+}
+.services__text:nth-child(2), .services__text:nth-child(5), .services__text:nth-child(8), .services__text--center {
+  text-align: center;
+}
+.services__text:nth-child(3n) {
+  margin-left: 20px;
+}
+.services__text {
+  padding: 6px;
+}
+.services__text:nth-child(1), .services__text:nth-child(4), .services__text:nth-child(7) {
+  text-decoration: underline;
+}
+.services__summary__img {
+  margin-right: 35px;
+}
 
 details > summary {
   color: white;
   border-radius: 40px;
   list-style-type: none;
   background-color: #53CD8B;
-  margin-top: 10px;
+  margin-top: 2px;
   padding: 25px 0 25px 60px;
+  display: flex;
+  justify-content: space-between;
+}
+
+details > summary::-webkit-details-marker {
+  display: none;
+}
+
+details[open] img {
+  transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
 }
