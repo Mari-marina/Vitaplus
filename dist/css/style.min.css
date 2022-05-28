@@ -513,7 +513,24 @@ button {
 .nav {
   display: flex;
   flex-direction: column;
+  max-width: 1016px;
+  width: 100%;
+  margin-top: 82px;
+  font-size: 14px;
 }
-.nav__list {
+.nav__list, .nav__list--bottom, .nav__list__wrap {
   display: flex;
+  justify-content: space-between;
+}
+.nav__list__wrap {
+  max-width: 472px;
+  width: 100%;
+}
+.nav__list--bottom {
+  margin-top: 42px;
+}
+.nav__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
 }

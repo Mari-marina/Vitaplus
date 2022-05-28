@@ -1,7 +1,27 @@
 .nav {
   display: flex;
   flex-direction: column;
-  &__list {
+  max-width: 1016px;
+  width: 100%;
+  margin-top: 82px;
+  font-size: 14px;
+  &__list,
+  &__list--bottom,
+  &__list__wrap {
     display: flex;
+    justify-content: space-between;
+    
+  }
+  &__list__wrap{
+   max-width: 472px;
+   width: 100%;
+  }
+  &__list--bottom{
+    margin-top: 42px;
+  }
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
   }
 }
