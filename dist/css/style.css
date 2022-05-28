@@ -407,6 +407,13 @@ li, a {
   font-weight: 400;
 }
 
+details > summary {
+  font-family: OnestMedium;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 31px;
+}
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 .flex {
   display: flex;
@@ -648,4 +655,18 @@ button {
   height: 16px;
   top: -2px;
   left: -26px;
+}
+
+.services {
+  margin-top: 100px;
+  color: #0F2F2E;
+}
+
+details > summary {
+  color: white;
+  border-radius: 40px;
+  list-style-type: none;
+  background-color: #53CD8B;
+  margin-top: 10px;
+  padding: 25px 0 25px 60px;
 }
