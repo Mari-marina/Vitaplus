@@ -534,3 +534,52 @@ button {
   justify-content: space-between;
   align-items: flex-end;
 }
+.nav__link {
+  font-family: OnestMedium;
+}
+.nav__item--first, .nav__item--second, .nav__item--third, .nav__item--fourth, .nav__item--bottom {
+  position: relative;
+}
+.nav__item--first:before, .nav__item--second:before, .nav__item--third:before, .nav__item--fourth:before {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: -19px;
+}
+.nav__item--first:before {
+  background-image: url(../../../img/icons/location.svg);
+  width: 14px;
+  height: 18px;
+  top: -2px;
+  left: -22px;
+}
+.nav__item--second:before {
+  background-image: url(../../../img/icons/letter.svg);
+  width: 19px;
+  height: 14px;
+  top: 1px;
+  left: -27px;
+}
+.nav__item--third:before {
+  background-image: url(../../../img/icons/watch.svg);
+  width: 16px;
+  height: 16px;
+  top: 0px;
+  left: -24px;
+}
+.nav__item--fourth:before {
+  background-image: url(../../../img/icons/phone.svg);
+  width: 16px;
+  height: 16px;
+  top: -1px;
+  left: -22px;
+}
+.nav__item--bottom:first-child:before {
+  content: "";
+  position: absolute;
+  background-image: url(../../../img/icons/burger.svg);
+  width: 16px;
+  height: 16px;
+  top: -2px;
+  left: -26px;
+}
