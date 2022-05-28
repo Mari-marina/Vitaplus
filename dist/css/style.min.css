@@ -7,7 +7,7 @@ html {
 
 body {
   margin: 0;
-  /*  font-family: "Roboto"; */
+  background: #E5E5E5;
 }
 
 button {
@@ -513,6 +513,21 @@ button {
   border-radius: 50px;
 }
 
+.header {
+  margin-top: 40px;
+}
+.header__background {
+  max-width: 1360px;
+  width: 100%;
+  padding-bottom: 96px;
+  margin: 0 auto;
+  background: #FFFFFF;
+  border-radius: 40px;
+  -webkit-border-radius: 40px;
+  -moz-border-radius: 40px;
+  -ms-border-radius: 40px;
+  -o-border-radius: 40px;
+}
 .header__wrapper {
   margin-top: 103px;
   display: flex;
