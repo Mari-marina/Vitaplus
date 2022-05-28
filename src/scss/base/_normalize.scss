@@ -5,26 +5,7 @@ html {
   -webkit-text-size-adjust: 100%;
 }
 
-@font-face {
-  font-family: "Roboto-Bold";
-  src: url(/css/fonts/Roboto-Bold.ttf);
-}
-@font-face {
-  font-family: "Roboto-Light";
-  src: url(/css/fonts/Roboto-Light.ttf);
-}
-@font-face {
-  font-family: "Roboto-Regular";
-  src: url(/css/fonts/Roboto-Regular.ttf);
-}
 
-
-/* Sections
-   ========================================================================== */
-
-/**
- * Remove the margin in all browsers.
- */
 
 body {
   margin: 0;
@@ -160,12 +141,7 @@ sup {
   top: -0.5em;
 }
 
-/* Embedded content
-   ========================================================================== */
 
-/**
- * Remove the border on images inside links in IE 10.
- */
 
 img {
   border-style: none;

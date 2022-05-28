@@ -5,23 +5,6 @@ html {
   -webkit-text-size-adjust: 100%;
 }
 
-@font-face {
-  font-family: "Roboto-Bold";
-  src: url(/css/fonts/Roboto-Bold.ttf);
-}
-@font-face {
-  font-family: "Roboto-Light";
-  src: url(/css/fonts/Roboto-Light.ttf);
-}
-@font-face {
-  font-family: "Roboto-Regular";
-  src: url(/css/fonts/Roboto-Regular.ttf);
-}
-/* Sections
-   ========================================================================== */
-/**
- * Remove the margin in all browsers.
- */
 body {
   margin: 0;
   /*  font-family: "Roboto"; */
@@ -156,11 +139,6 @@ sup {
   top: -0.5em;
 }
 
-/* Embedded content
-   ========================================================================== */
-/**
- * Remove the border on images inside links in IE 10.
- */
 img {
   border-style: none;
 }
@@ -385,6 +363,47 @@ a {
   /* border: 1px solid red; */
 }
 
+@font-face {
+  font-family: OnestMedium;
+  font-display: swap;
+  src: url("../fonts/OnestMedium1602-hint.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: nestLight;
+  font-display: swap;
+  src: url("../fonts/OnestLight1602-hint.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+h2,
+h1 {
+  font-family: OnestMedium;
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 56px;
+}
+
+button {
+  font-family: OnestMedium;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+}
+
+p {
+  font-family: nestLight;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+li, a {
+  font-family: nestLight;
+  font-weight: 400;
+}
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 .flex {
   display: flex;
@@ -481,47 +500,8 @@ body {
   text-decoration: none;
 }
 
-.btn-price {
-  font-family: Raleway;
-  font-size: 21px;
-  font-weight: 700;
-  line-height: 25px;
-  color: #fafafa;
-  padding: 20px 40px;
-  background: linear-gradient(273.47deg, #121212 -1.55%, #272727 103.02%);
-  box-shadow: -8px -8px 10px rgba(255, 255, 255, 0.25), 8px 8px 10px rgba(157, 132, 3, 0.25);
-  border-radius: 10px;
-  margin: 50px 0 109px;
-}
-.btn-price:hover {
-  background: linear-gradient(93.88deg, #fff -12.68%, #e2e0e0 123.69%);
-  box-shadow: -8px -8px 10px rgba(255, 255, 255, 0.25), 8px 8px 10px rgba(157, 132, 3, 0.25);
-  transition: 0.35s;
-  color: #050103;
-}
-
-.btn-discuss {
-  font-family: Raleway;
-  font-size: 18px;
-  font-weight: 600;
-  line-height: 27px;
-  color: #050103;
-  padding: 19px 36px;
-  background-color: #ffd752;
-  border: none;
-  cursor: pointer;
-}
-.btn-discuss:hover {
-  background-color: #050103;
-  color: #ffd752;
-  transition: 0.3s;
-}
-
-.site-keys {
-  background-image: url(../img/bg_left.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 100%;
+button {
+  border-radius: 50px;
 }
 
 .--header_light {
