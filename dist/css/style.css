@@ -688,6 +688,25 @@ button {
 .services__summary__img {
   margin-right: 35px;
 }
+.services__text--left, .services__text--center, .services__text--right {
+  color: #707777;
+}
+.services__button {
+  border-color: #53CD8B;
+  color: #53CD8B;
+  width: 187px;
+  height: 60px;
+}
+.services__button:hover {
+  color: #FFFFFF;
+  background-color: #53CD8B;
+  border: none;
+}
+.services__btn {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
 
 details > summary {
   color: white;

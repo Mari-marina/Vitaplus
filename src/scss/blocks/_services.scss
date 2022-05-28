@@ -33,6 +33,27 @@
   &__summary__img {
     margin-right: 35px;
   }
+  &__text--left,
+  &__text--center,
+  &__text--right {
+    color: #707777;
+  }
+  &__button{
+    border-color: $accentColor;
+    color: $accentColor;
+    width: 187px;
+    height: 60px;
+  }
+  &__button:hover {
+    color: #FFFFFF;
+    background-color: $accentColor;
+    border: none;
+  }
+  &__btn {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+  }
 }
 
 details > summary {
