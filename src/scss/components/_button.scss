@@ -1,0 +1,43 @@
+.btn-price {
+	font-family: Raleway;
+	font-size: 21px;
+	font-weight: 700;
+	line-height: 25px;
+	color: #fafafa;
+	padding: 20px 40px;
+
+	background: linear-gradient(273.47deg, #121212 -1.55%, #272727 103.02%);
+
+	box-shadow: -8px -8px 10px rgba(255, 255, 255, .25), 8px 8px 10px rgba(157, 132, 3, .25);
+	border-radius: 10px;
+	margin: 50px 0 109px;
+
+	&:hover {
+
+		background: linear-gradient(93.88deg, #fff -12.68%, #e2e0e0 123.69%);
+
+		box-shadow: -8px -8px 10px rgba(255, 255, 255, .25), 8px 8px 10px rgba(157, 132, 3, .25);
+
+		transition: .35s;
+		color: #050103
+	}
+}
+
+.btn-discuss {
+	font-family: Raleway;
+	font-size: 18px;
+	font-weight: 600;
+	line-height: 27px;
+	color: #050103;
+	padding: 19px 36px;
+	background-color: #ffd752;
+	border: none;
+	cursor: pointer;
+
+	&:hover {
+		background-color: #050103;
+		color: #ffd752;
+
+		transition: .3s
+	}
+}

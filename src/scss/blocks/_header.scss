@@ -1,0 +1,35 @@
+// .header {
+//   // .header__top
+
+//   // .header__global
+//   &__global {
+//     padding: 23px 0;
+//     .logo {
+//       // .logo__link
+//       &__link {
+//         margin-right: 30px;
+//       }
+//     }
+//   }
+//   // .header__global-city
+//   &__global-city {
+//     margin-right: 146px;
+//   }
+// }
+
+.--header {
+  // .--header_light
+  &_light {
+    font-family: Raleway;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21px;
+  }
+  // .--header_med
+  &_med {
+    font-family: Raleway;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 27px;
+  }
+}
