@@ -469,6 +469,12 @@ body {
   color: #000;
 }
 
+.container {
+  max-width: 1160px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
 .header__global-city,
 .list__item-link,
 .menu__list-link,
@@ -504,15 +510,10 @@ button {
   border-radius: 50px;
 }
 
-.--header_light {
-  font-family: Raleway;
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 21px;
+.nav {
+  display: flex;
+  flex-direction: column;
 }
-.--header_med {
-  font-family: Raleway;
-  font-size: 18px;
-  font-weight: 600;
-  line-height: 27px;
+.nav__list {
+  display: flex;
 }
