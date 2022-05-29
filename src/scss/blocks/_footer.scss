@@ -1,0 +1,57 @@
+@import './../../scss/abstracts/_mixins';
+
+.footer {
+  margin-top: 100px;
+  background: #0F2F2E;
+  border-radius: 40px 40px 0 0;
+  -webkit-border-radius: 40px 40px 0 0;
+  -moz-border-radius: 40px 40px 0 0;
+  -ms-border-radius: 40px 40px 0 0;
+  -o-border-radius: 40px 40px 0 0;
+}
+.footer {
+  &__nav {
+    display: flex;
+justify-content: space-between;
+padding-top: 122px;
+  }
+  &__nav__list--first{
+    @include text(14px, 400, 18px, #707777);
+  }
+  &__nav__list--second{
+    @include text(16px, 400, 20px, #FFFFFF);
+  }
+  &__nav__list--first > &__nav__item{
+    margin-bottom: 24px;
+  }
+  &__nav__list--second > &__nav__item{
+    margin-bottom: 22px;
+  }
+  &__button {
+    border-color: $accentColor;
+    color: #FFFFFF;
+    width: 231px;
+    height: 60px;
+    background: $accentColor;
+  }
+  &__group-icon {
+    max-width: 122px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 60px;
+  }
+  &__bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 100px 0 106px;
+  }
+  &__bottom__text {
+    @include text(16px, 400, 20px, #707777);
+  }
+  &__bottom__link {
+    @include text(16px, 400, 20px, $accentColor);
+    text-decoration: underline
+  }
+}

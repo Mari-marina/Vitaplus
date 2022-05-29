@@ -1277,3 +1277,92 @@ details[open] img {
   justify-content: space-between;
   margin: 40px 0 100px;
 }
+
+/* -----------------------------------------------------------------
+                       @media
+1-ый параметр $min-max принимает 3 аргумента min, max, min-max.
+   min       - для mobil @media
+   max       - для dectop @media
+   min-max   - для промежутка между mobil-dectop @media
+2-ой параметр $breakpoint_1 принимает 1-ин аргумент.
+   ключ      - хранятся в созданной карте $grid_breakpoints(xxl, xl, lg, md , sm...)
+3-ий параметр $breakpoint_2 принимает 1-ин аргумент, является не обязательным параметром.
+   ключ      - хранятся в созданной карте $grid_breakpoints(xxl, xl, lg, md , sm...) нужен для 1-ого параметра 3 аргумента.
+ Дополнение:
+   map-has-key  - Нужен для проверки ключа в карте, если ключа указанного нет то условие не выполняется.
+   map-get      - Нужен для использование ключей из карты.
+Пример:
+   @include media(max, xxl) { display: none;}
+   @include media(min, xxl) { display: none;}
+   @include media(min-max, mn-lg, mx-xxl) { display: none;}
+Одиночные брекпоинты:
+   @include media(max, 870px,) { display: none;}
+   @include media(min, 870px,) { display: none;}
+   @include media(min-max, 870px, 1000px) { display: none;}
+--------------------------------------------------------------------*/
+.footer {
+  margin-top: 100px;
+  background: #0F2F2E;
+  border-radius: 40px 40px 0 0;
+  -webkit-border-radius: 40px 40px 0 0;
+  -moz-border-radius: 40px 40px 0 0;
+  -ms-border-radius: 40px 40px 0 0;
+  -o-border-radius: 40px 40px 0 0;
+}
+
+.footer__nav {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 122px;
+}
+.footer__nav__list--first {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  color: #707777;
+}
+.footer__nav__list--second {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #FFFFFF;
+}
+.footer__nav__list--first > .footer__nav__item {
+  margin-bottom: 24px;
+}
+.footer__nav__list--second > .footer__nav__item {
+  margin-bottom: 22px;
+}
+.footer__button {
+  border-color: #53CD8B;
+  color: #FFFFFF;
+  width: 231px;
+  height: 60px;
+  background: #53CD8B;
+}
+.footer__group-icon {
+  max-width: 122px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 60px;
+}
+.footer__bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 100px 0 106px;
+}
+.footer__bottom__text {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #707777;
+}
+.footer__bottom__link {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #53CD8B;
+  text-decoration: underline;
+}
