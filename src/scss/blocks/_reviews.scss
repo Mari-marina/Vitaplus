@@ -4,7 +4,7 @@
     margin: 30px 0 40px;
     @include text(22px, 500, 150%, #0F2F2E);
   }
-  &__wrarrer-background{
+  &__wrapper-background{
     max-width: 560px;
     width: 100%;
     background: #FFFFFF;
@@ -39,7 +39,8 @@
   margin-bottom: 40px;
   }
   &__button {
-    border-color: $accentColor;
+    border-color: #0F2F2E;
+    border-width: 2px;
     color: $accentColor;
     width: 209px;
     height: 60px;
@@ -50,5 +51,93 @@
     color: #FFFFFF;
     background-color: $accentColor;
     border: none;
+  }
+  &__wrap-background {
+    background: $accentColor;
+    border-radius: 40px;
+    margin-top: 100px;
+  }
+  &__forms__input,
+  &__forms__raiting {
+    border-radius: 40px;
+    background-color: inherit;
+    height: 60px;
+    width: 400px;
+    color: #0F2F2E;
+    padding: 0 43px;
+    margin-bottom: 20px
+   
+  }
+  &__forms__subtitle {
+    @include text(40px, 400, 140%, #FFFFFF);
+    margin-bottom: 36px
+  }
+  &__forms__text {
+    @include text(12px, 400, 21px, #FFFFFF);
+    margin-bottom: 48px;
+    max-width: 504px;
+    width: 100%;
+  }
+  &__forms__textarea {
+    background-color: inherit;
+    border-radius: 40px;
+    max-width: 600px;
+    width: 100%;
+    height: 140px;
+    color: #0F2F2E;
+    padding: 12px 43px;
+    margin-bottom: 20px;
+  }
+  &__forms__input::placeholder,
+  &__forms__raiting::placeholder,
+  &__forms__textarea::placeholder,
+  &__btn-text {
+    @include text(16px, 500, 20px, #0F2F2E);
+    font-family: OnestMedium;
+  }
+  &__forms--left {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    width: 100%;
+  }
+  &__forms--right {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    width: 100%;
+    
+  }
+  &__forms {
+    display: flex;
+    justify-content: space-around;
+    padding: 60px;
+  }
+  &__forms__button {
+    border-color: #0F2F2E;
+    color: #0F2F2E;
+    width: 231px;
+    height: 60px;
+  }
+  &__forms__button:hover {
+    color: $accentColor;
+    background-color: #0F2F2E;
+    border: none;
+  }
+  &__forms__wrap-button {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__forms__text--bottom {
+    max-width: 320px;
+    width: 100%;
+    @include text(12px, 400, 21px, #FFFFFF);
+  }
+  &__btn__forms__raiting {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 46px;
   }
 }
