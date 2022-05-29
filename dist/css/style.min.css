@@ -662,6 +662,7 @@ button {
   left: -26px;
 }
 
+<<<<<<< HEAD
 .ourDoctors {
   margin-top: 40px;
 }
@@ -694,6 +695,8 @@ button {
   height: 5px;
 }
 
+=======
+>>>>>>> a6862c3d37a66c000ace9bb90bcc11217f17fb7e
 .consultations__wrap--color {
   background: #53CD8B;
   border-radius: 40px;
@@ -975,6 +978,10 @@ details[open] img {
   height: 60px;
   margin: 0 auto;
   display: block;
+<<<<<<< HEAD
+=======
+  padding-top: 40px;
+>>>>>>> a6862c3d37a66c000ace9bb90bcc11217f17fb7e
 }
 .doctors__main-button:hover {
   color: #FFFFFF;
