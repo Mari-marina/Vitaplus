@@ -1,0 +1,65 @@
+@import './../../scss/abstracts/_mixins';
+.aboutUs {
+&__span {
+@include text(16px, 400, 18px, #707777);
+// margin-bottom: 20px;
+}
+&__title--color{
+  color: $accentColor;
+}
+&__title {
+  margin-top: 20px;
+}
+&__wrapper {
+  width: 100%;
+  max-width: 660px;
+}
+&__text {
+  margin: 40px 0 40px;
+  color: #0F2F2E;
+}
+&__button {
+  border-color: $accentColor;
+  background-color: $accentColor;;
+  color: #FFFFFF;
+  width: 231px;
+  height: 60px;
+}
+&__button:hover {
+  color: $accentColor; 
+  background-color: inherit;
+  border-color: $accentColor;
+}
+&__img{
+  max-width: 450px;
+  width: 100%;
+}
+&__content {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 100px;
+}
+&__wrap {
+  max-width: 260px;
+  width: 100%;
+  height: 170px;
+  background: #FFFFFF;
+  border-radius: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+&__text--small{
+  margin-top: 10px;
+}
+&__wrap-info {
+  display: flex;
+  justify-content: space-between;
+  max-width: 860px;
+  width: 100%;
+  position: relative;
+  top: -72px;
+  left: 288px;
+}
+}

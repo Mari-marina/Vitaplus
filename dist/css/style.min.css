@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Raleway:wght@400;600;700;800&display=swap);
 html {
   line-height: 1.15;
@@ -655,6 +656,93 @@ button {
   height: 16px;
   top: -2px;
   left: -26px;
+}
+
+/* -----------------------------------------------------------------
+                       @media
+1-ый параметр $min-max принимает 3 аргумента min, max, min-max.
+   min       - для mobil @media
+   max       - для dectop @media
+   min-max   - для промежутка между mobil-dectop @media
+2-ой параметр $breakpoint_1 принимает 1-ин аргумент.
+   ключ      - хранятся в созданной карте $grid_breakpoints(xxl, xl, lg, md , sm...)
+3-ий параметр $breakpoint_2 принимает 1-ин аргумент, является не обязательным параметром.
+   ключ      - хранятся в созданной карте $grid_breakpoints(xxl, xl, lg, md , sm...) нужен для 1-ого параметра 3 аргумента.
+ Дополнение:
+   map-has-key  - Нужен для проверки ключа в карте, если ключа указанного нет то условие не выполняется.
+   map-get      - Нужен для использование ключей из карты.
+Пример:
+   @include media(max, xxl) { display: none;}
+   @include media(min, xxl) { display: none;}
+   @include media(min-max, mn-lg, mx-xxl) { display: none;}
+Одиночные брекпоинты:
+   @include media(max, 870px,) { display: none;}
+   @include media(min, 870px,) { display: none;}
+   @include media(min-max, 870px, 1000px) { display: none;}
+--------------------------------------------------------------------*/
+.aboutUs__span {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+  color: #707777;
+}
+.aboutUs__title--color {
+  color: #53CD8B;
+}
+.aboutUs__title {
+  margin-top: 20px;
+}
+.aboutUs__wrapper {
+  width: 100%;
+  max-width: 660px;
+}
+.aboutUs__text {
+  margin: 40px 0 40px;
+  color: #0F2F2E;
+}
+.aboutUs__button {
+  border-color: #53CD8B;
+  background-color: #53CD8B;
+  color: #FFFFFF;
+  width: 231px;
+  height: 60px;
+}
+.aboutUs__button:hover {
+  color: #53CD8B;
+  background-color: inherit;
+  border-color: #53CD8B;
+}
+.aboutUs__img {
+  max-width: 450px;
+  width: 100%;
+}
+.aboutUs__content {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 100px;
+}
+.aboutUs__wrap {
+  max-width: 260px;
+  width: 100%;
+  height: 170px;
+  background: #FFFFFF;
+  border-radius: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.aboutUs__text--small {
+  margin-top: 10px;
+}
+.aboutUs__wrap-info {
+  display: flex;
+  justify-content: space-between;
+  max-width: 860px;
+  width: 100%;
+  position: relative;
+  top: -72px;
+  left: 288px;
 }
 
 .services {
