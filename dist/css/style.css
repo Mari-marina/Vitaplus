@@ -1275,5 +1275,5 @@ details[open] img {
 .contacts__wrapper {
   display: flex;
   justify-content: space-between;
-  margin-top: 40px;
+  margin: 40px 0 100px;
 }
