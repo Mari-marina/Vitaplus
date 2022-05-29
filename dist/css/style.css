@@ -525,6 +525,24 @@ button {
   border-radius: 50px;
 }
 
+.rating-result span {
+  padding: 0;
+  font-size: 32px;
+  margin: 0 3px;
+  line-height: 1;
+  color: lightgrey;
+  text-shadow: 1px 1px #bbb;
+}
+
+.rating-result > span:before {
+  content: "★";
+}
+
+.rating-result > span.active {
+  color: gold;
+  text-shadow: 1px 1px #c60;
+}
+
 .header {
   margin-top: 40px;
 }
@@ -662,10 +680,6 @@ button {
   left: -26px;
 }
 
-<<<<<<< HEAD
-.ourDoctors {
-  margin-top: 40px;
-}
 .ourDoctors__title {
   margin: 30px 0 30px;
 }
@@ -680,6 +694,7 @@ button {
 }
 
 .breadcrumb {
+  margin-top: 98px;
   display: flex;
 }
 .breadcrumb__item {
@@ -695,8 +710,6 @@ button {
   height: 5px;
 }
 
-=======
->>>>>>> a6862c3d37a66c000ace9bb90bcc11217f17fb7e
 .consultations__wrap--color {
   background: #53CD8B;
   border-radius: 40px;
@@ -978,12 +991,84 @@ details[open] img {
   height: 60px;
   margin: 0 auto;
   display: block;
-<<<<<<< HEAD
-=======
-  padding-top: 40px;
->>>>>>> a6862c3d37a66c000ace9bb90bcc11217f17fb7e
 }
 .doctors__main-button:hover {
+  color: #FFFFFF;
+  background-color: #53CD8B;
+  border: none;
+}
+
+/* -----------------------------------------------------------------
+                       @media
+1-ый параметр $min-max принимает 3 аргумента min, max, min-max.
+   min       - для mobil @media
+   max       - для dectop @media
+   min-max   - для промежутка между mobil-dectop @media
+2-ой параметр $breakpoint_1 принимает 1-ин аргумент.
+   ключ      - хранятся в созданной карте $grid_breakpoints(xxl, xl, lg, md , sm...)
+3-ий параметр $breakpoint_2 принимает 1-ин аргумент, является не обязательным параметром.
+   ключ      - хранятся в созданной карте $grid_breakpoints(xxl, xl, lg, md , sm...) нужен для 1-ого параметра 3 аргумента.
+ Дополнение:
+   map-has-key  - Нужен для проверки ключа в карте, если ключа указанного нет то условие не выполняется.
+   map-get      - Нужен для использование ключей из карты.
+Пример:
+   @include media(max, xxl) { display: none;}
+   @include media(min, xxl) { display: none;}
+   @include media(min-max, mn-lg, mx-xxl) { display: none;}
+Одиночные брекпоинты:
+   @include media(max, 870px,) { display: none;}
+   @include media(min, 870px,) { display: none;}
+   @include media(min-max, 870px, 1000px) { display: none;}
+--------------------------------------------------------------------*/
+.reviews__title {
+  margin: 30px 0 40px;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 150%;
+  color: #0F2F2E;
+}
+.reviews__wrarrer-background {
+  max-width: 560px;
+  width: 100%;
+  background: #FFFFFF;
+  border-radius: 40px;
+}
+.reviews__wrarrer {
+  max-width: 460px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+.reviews__content, .reviews__text {
+  display: flex;
+  max-width: 440px;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+.reviews__subtitle {
+  padding: 44px 0 20px;
+}
+.reviews__text {
+  padding: 20px 0 53px;
+}
+.reviews__blocks {
+  display: grid;
+  grid-template-columns: auto auto;
+  padding: 4px;
+  grid-column-gap: 40px;
+  grid-row-gap: 40px;
+  margin-bottom: 40px;
+}
+.reviews__button {
+  border-color: #53CD8B;
+  color: #53CD8B;
+  width: 209px;
+  height: 60px;
+  margin: 0 auto;
+  display: block;
+}
+.reviews__button:hover {
   color: #FFFFFF;
   background-color: #53CD8B;
   border: none;

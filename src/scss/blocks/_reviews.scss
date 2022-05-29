@@ -1,0 +1,54 @@
+@import './../../scss/abstracts/_mixins';
+.reviews {
+  &__title {
+    margin: 30px 0 40px;
+    @include text(22px, 500, 150%, #0F2F2E);
+  }
+  &__wrarrer-background{
+    max-width: 560px;
+    width: 100%;
+    background: #FFFFFF;
+    border-radius: 40px;
+  }
+  &__wrarrer {
+    max-width: 460px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 10px;
+  }
+  &__content,
+  &__text {
+    display: flex;
+    max-width: 440px;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__subtitle{
+    padding: 44px 0 20px;
+  }
+  &__text {
+    padding: 20px 0 53px;
+  }
+  &__blocks {
+  display: grid;
+  grid-template-columns: auto auto;
+  padding: 4px;
+  grid-column-gap: 40px;
+  grid-row-gap: 40px;
+  margin-bottom: 40px;
+  }
+  &__button {
+    border-color: $accentColor;
+    color: $accentColor;
+    width: 209px;
+    height: 60px;
+    margin: 0 auto;
+    display: block;
+  }
+  &__button:hover {
+    color: #FFFFFF;
+    background-color: $accentColor;
+    border: none;
+  }
+}
