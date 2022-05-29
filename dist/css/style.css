@@ -604,8 +604,8 @@ button {
 }
 .header__img {
   position: absolute;
-  max-width: 779px;
-  bottom: -41px;
+  max-width: 778px;
+  bottom: -76px;
 }
 
 .title {
@@ -725,6 +725,9 @@ button {
   max-width: 600px;
   width: 100%;
 }
+.consultations__title--color {
+  color: #0F2F2E;
+}
 .consultations__title, .consultations__text {
   color: #FFFFFF;
 }
@@ -746,7 +749,7 @@ button {
   border: none;
 }
 .consultations__img {
-  max-width: 514px;
+  max-width: 471px;
   width: 100%;
   position: absolute;
   top: -53px;
@@ -800,7 +803,7 @@ button {
 }
 .aboutUs__wrapper {
   width: 100%;
-  max-width: 660px;
+  max-width: 627px;
 }
 .aboutUs__text {
   margin: 40px 0 40px;

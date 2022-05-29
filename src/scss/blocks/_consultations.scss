@@ -7,6 +7,9 @@
      max-width: 600px;
      width: 100%;
   }
+  &__title--color {
+    color: #0F2F2E;
+  }
   &__title,
   &__text {
     color: #FFFFFF;
@@ -29,7 +32,7 @@
     border: none;
   }
   &__img {
-    max-width: 514px;
+    max-width: 471px;
     width: 100%;
     position: absolute;
     top: -53px;
