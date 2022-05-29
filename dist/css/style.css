@@ -1175,3 +1175,105 @@ details[open] img {
   justify-content: space-between;
   padding: 12px 46px;
 }
+
+/* -----------------------------------------------------------------
+                       @media
+1-ый параметр $min-max принимает 3 аргумента min, max, min-max.
+   min       - для mobil @media
+   max       - для dectop @media
+   min-max   - для промежутка между mobil-dectop @media
+2-ой параметр $breakpoint_1 принимает 1-ин аргумент.
+   ключ      - хранятся в созданной карте $grid_breakpoints(xxl, xl, lg, md , sm...)
+3-ий параметр $breakpoint_2 принимает 1-ин аргумент, является не обязательным параметром.
+   ключ      - хранятся в созданной карте $grid_breakpoints(xxl, xl, lg, md , sm...) нужен для 1-ого параметра 3 аргумента.
+ Дополнение:
+   map-has-key  - Нужен для проверки ключа в карте, если ключа указанного нет то условие не выполняется.
+   map-get      - Нужен для использование ключей из карты.
+Пример:
+   @include media(max, xxl) { display: none;}
+   @include media(min, xxl) { display: none;}
+   @include media(min-max, mn-lg, mx-xxl) { display: none;}
+Одиночные брекпоинты:
+   @include media(max, 870px,) { display: none;}
+   @include media(min, 870px,) { display: none;}
+   @include media(min-max, 870px, 1000px) { display: none;}
+--------------------------------------------------------------------*/
+.contacts__title {
+  margin-top: 30px;
+}
+.contacts__block {
+  background: #FFFFFF;
+  max-width: 560px;
+  width: 100%;
+  border-radius: 40px;
+}
+.contacts__nav__list {
+  display: flex;
+  flex-direction: column;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #0F2F2E;
+  font-family: nestLight !important;
+  padding: 53px 100px;
+}
+.contacts__nav__item {
+  margin-bottom: 40px;
+}
+.contacts__item--first, .contacts__item--second, .contacts__item--third, .contacts__item--fourth {
+  position: relative;
+}
+.contacts__item--first:before, .contacts__item--second:before, .contacts__item--third:before, .contacts__item--fourth:before {
+  content: "";
+  position: absolute;
+}
+.contacts__item--first:before {
+  background-image: url(../../../../img/icons/location.svg);
+  width: 14px;
+  height: 18px;
+  top: 2px;
+  left: -34px;
+}
+.contacts__item--second:before {
+  background-image: url(../../../img/icons/letter.svg);
+  width: 18px;
+  height: 14px;
+  top: 4px;
+  left: -36px;
+}
+.contacts__item--third:before {
+  background-image: url(../../../img/icons/watch.svg);
+  width: 16px;
+  height: 16px;
+  top: 0px;
+  left: -24px;
+}
+.contacts__item--fourth:before {
+  background-image: url(../../../img/icons/phone.svg);
+  width: 16px;
+  height: 16px;
+  left: -32px;
+}
+.contacts__group-icon {
+  display: flex;
+  align-items: center;
+  max-width: 122px;
+  width: 100%;
+  justify-content: space-between;
+  position: relative;
+  bottom: 58px;
+  left: 66px;
+}
+.contacts__map {
+  border: none;
+  border-radius: 40px;
+  -webkit-border-radius: 40px;
+  -moz-border-radius: 40px;
+  -ms-border-radius: 40px;
+  -o-border-radius: 40px;
+}
+.contacts__wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+}

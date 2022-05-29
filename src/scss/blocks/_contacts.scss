@@ -1,0 +1,87 @@
+@import './../../scss/abstracts/_mixins';
+.contacts {
+  &__title {
+    margin-top: 30px;
+  }
+  &__block {
+    background: #FFFFFF;
+    max-width: 560px;
+    width: 100%;
+    border-radius: 40px;
+  }
+  &__nav__list {
+    display: flex;
+    flex-direction: column;
+    @include text(16px, 400, 20px, #0F2F2E) ;
+    font-family: nestLight !important;
+    
+    padding: 53px 100px;
+    
+  }
+  &__nav__item {
+    margin-bottom: 40px;
+  }
+  &__item--first,
+  &__item--second,
+  &__item--third,
+  &__item--fourth {
+    position: relative;
+  }
+  &__item--first:before,
+  &__item--second:before,
+  &__item--third:before,
+  &__item--fourth:before {
+    content: "";
+    position: absolute;
+  }
+  &__item--first:before {
+    background-image: url(../../../../img/icons/location.svg);
+    width: 14px;
+    height: 18px;
+    top: 2px;
+    left: -34px;
+  }
+  &__item--second:before {
+    background-image: url(../../../img/icons/letter.svg);
+    width: 18px;
+    height: 14px;
+    top: 4px;
+    left: -36px;
+  }
+  &__item--third:before {
+    background-image: url(../../../img/icons/watch.svg);
+    width: 16px;
+    height: 16px;
+    top: 0px;
+    left: -24px;
+  }
+  &__item--fourth:before {
+    background-image: url(../../../img/icons/phone.svg);
+    width: 16px;
+    height: 16px;
+    left: -32px;;
+  }
+  &__group-icon {
+    display: flex;
+    align-items: center;
+    max-width: 122px;
+    width: 100%;
+    justify-content: space-between;
+    position: relative;
+    bottom: 58px;
+    left: 66px;
+  }
+  &__map {
+    border: none;
+    border-radius: 40px;
+    -webkit-border-radius: 40px;
+    -moz-border-radius: 40px;
+    -ms-border-radius: 40px;
+    -o-border-radius: 40px;
+}
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+  }
+}
