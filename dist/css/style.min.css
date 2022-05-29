@@ -1278,6 +1278,108 @@ details[open] img {
   margin: 40px 0 100px;
 }
 
+.breadcrumbsForCard {
+  margin-top: 98px;
+  display: flex;
+}
+.breadcrumbsForCard__item {
+  margin-right: 24px;
+  position: relative;
+}
+.breadcrumbsForCard__item:last-child::before {
+  content: ">";
+  position: absolute;
+  top: -1px;
+  left: -16px;
+  width: 5px;
+  height: 5px;
+}
+.breadcrumbsForCard__item:nth-child(2):after {
+  content: ">";
+  position: absolute;
+  top: -1px;
+  left: -16px;
+  width: 5px;
+  height: 5px;
+}
+
+/* -----------------------------------------------------------------
+                       @media
+1-ый параметр $min-max принимает 3 аргумента min, max, min-max.
+   min       - для mobil @media
+   max       - для dectop @media
+   min-max   - для промежутка между mobil-dectop @media
+2-ой параметр $breakpoint_1 принимает 1-ин аргумент.
+   ключ      - хранятся в созданной карте $grid_breakpoints(xxl, xl, lg, md , sm...)
+3-ий параметр $breakpoint_2 принимает 1-ин аргумент, является не обязательным параметром.
+   ключ      - хранятся в созданной карте $grid_breakpoints(xxl, xl, lg, md , sm...) нужен для 1-ого параметра 3 аргумента.
+ Дополнение:
+   map-has-key  - Нужен для проверки ключа в карте, если ключа указанного нет то условие не выполняется.
+   map-get      - Нужен для использование ключей из карты.
+Пример:
+   @include media(max, xxl) { display: none;}
+   @include media(min, xxl) { display: none;}
+   @include media(min-max, mn-lg, mx-xxl) { display: none;}
+Одиночные брекпоинты:
+   @include media(max, 870px,) { display: none;}
+   @include media(min, 870px,) { display: none;}
+   @include media(min-max, 870px, 1000px) { display: none;}
+--------------------------------------------------------------------*/
+.registration__text--green {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #53CD8B;
+}
+.registration__wrap {
+  max-width: 660px;
+  width: 100%;
+}
+.registration__btn {
+  border-color: #53CD8B;
+  color: #FFFFFF;
+  width: 268px;
+  height: 60px;
+  background: #53CD8B;
+  border: none;
+  margin-top: 48px;
+}
+.registration__img {
+  max-width: 460px;
+  width: 100%;
+}
+.registration__wrapper {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding-top: 40px;
+  justify-items: end;
+  margin-bottom: 80px;
+}
+.registration__text--green {
+  margin: 20px 0 40px;
+}
+.registration__title-data {
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 140%;
+  color: #53CD8B;
+  font-family: OnestMedium;
+}
+.registration__text--bottom, .registration__text {
+  color: #0F2F2E;
+}
+.registration__text--bottom {
+  max-width: 860px;
+  width: 100%;
+}
+.registration__wrap-description {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 44px;
+}
+
 /* -----------------------------------------------------------------
                        @media
 1-ый параметр $min-max принимает 3 аргумента min, max, min-max.
@@ -1352,6 +1454,12 @@ details[open] img {
   justify-content: space-between;
   align-items: flex-end;
   padding: 100px 0 106px;
+}
+.footer__bottom__wrap {
+  max-width: 258px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
 }
 .footer__bottom__text {
   font-size: 16px;

@@ -1,0 +1,76 @@
+.breadcrumbsForCard {
+  margin-top: 98px;
+  display: flex;
+  &__item{
+    margin-right: 24px;
+    position: relative;
+  }
+  &__item:last-child::before {
+    content: ">";
+    position: absolute;
+    top: -1px;
+    left: -16px;
+    width: 5px;
+    height: 5px;
+  }
+  &__item:nth-child(2):after {
+    content: ">";
+    position: absolute;
+    top: -1px;
+    left: -16px;
+    width: 5px;
+    height: 5px;
+  }
+}
+@import './../../scss/abstracts/_mixins';
+.registration {
+  &__text--green{
+    @include text(16px, 400, 24px, $accentColor);
+  }
+  &__wrap {
+    max-width: 660px;
+    width: 100%;
+  }
+  &__btn {
+    border-color: $accentColor;
+    color: #FFFFFF;
+    width: 268px;
+    height: 60px;
+    background: $accentColor;
+    border: none;
+    margin-top: 48px;
+  }
+  &__img {
+    max-width: 460px;
+    width: 100%;
+  }
+  &__wrapper {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding-top: 40px;
+    justify-items: end;
+    margin-bottom: 80px;
+  }
+  &__text--green {
+  margin: 20px 0 40px;
+  }
+  &__title-data {
+    @include text(40px, 500, 140%, $accentColor);
+    font-family: OnestMedium;
+  }
+  &__text--bottom,
+  &__text {
+    color: #0F2F2E;
+  }
+  &__text--bottom {
+    max-width: 860px;
+    width: 100%;
+  }
+  &__wrap-description {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 44px;
+  }
+}

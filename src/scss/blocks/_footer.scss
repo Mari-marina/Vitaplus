@@ -46,6 +46,12 @@ padding-top: 122px;
     justify-content: space-between;
     align-items: flex-end;
     padding: 100px 0 106px;
+    &__wrap {
+      max-width: 258px;
+      width: 100%;
+      display: flex;
+      justify-content: space-between
+    }
   }
   &__bottom__text {
     @include text(16px, 400, 20px, #707777);
