@@ -1,0 +1,30 @@
+.ourDoctors {
+  margin-top: 40px;
+  &__title {
+    margin: 30px 0 30px;
+  }
+  &__wrapper{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+  padding: 4px;
+  grid-column-gap: 40px;
+  grid-row-gap: 40px;
+  justify-content: center;
+  max-height: 1160px;
+  }
+}
+.breadcrumb {
+  display: flex;
+  &__item{
+    margin-right: 24px;
+    position: relative;
+  }
+  &__item:last-child::before {
+    content: ">";
+    position: absolute;
+    top: -1px;
+    left: -16px;
+    width: 5px;
+    height: 5px;
+  }
+}

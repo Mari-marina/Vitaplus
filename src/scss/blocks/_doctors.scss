@@ -1,0 +1,55 @@
+@import './../../scss/abstracts/_mixins';
+.doctors {
+  margin-top: 100px;
+  &__title {
+    margin-bottom: 40px;
+  }
+  &__wrap {
+    background: #FFFFFF;
+    max-width: 260px;
+    height: 386px;
+    width: 100%;
+    border-radius: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &__img {
+    width: 120px;
+    margin: 50px 0 20px;
+  }
+  &__subtitle {
+    text-align: center;
+    @include text(16px, 500, 24px, #0F2F2E);
+    margin-bottom: 15px;
+  }
+  &__text {
+    color: $accentColor;
+    margin-bottom: 30px;
+  }
+  &__button {
+    border-color: $accentColor;
+    background-color: $accentColor;;
+    color: #FFFFFF;
+    width: 178px;
+    height: 40px;
+  }
+  &__button:hover {
+    color: $accentColor; 
+    background-color: inherit;
+    border-color: $accentColor;
+  }
+  &__main-button {
+    border-color: $accentColor;
+    color: $accentColor;
+    width: 221px;
+    height: 60px;
+    margin: 0 auto;
+    display: block;
+  }
+  &__main-button:hover {
+    color: #FFFFFF;
+    background-color: $accentColor;
+    border: none;
+  }
+}
