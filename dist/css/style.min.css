@@ -658,6 +658,53 @@ button {
   left: -26px;
 }
 
+.consultations__wrap--color {
+  background: #53CD8B;
+  border-radius: 40px;
+}
+.consultations__wrapper {
+  max-width: 600px;
+  width: 100%;
+}
+.consultations__title, .consultations__text {
+  color: #FFFFFF;
+}
+.consultations__text {
+  margin: 40px 0 60px;
+  max-width: 462px;
+  width: 100%;
+  text-align: justify;
+}
+.consultations .consultations__button {
+  border-color: #0F2F2E;
+  color: #0F2F2E;
+  width: 231px;
+  height: 60px;
+}
+.consultations__button:hover {
+  color: #53CD8B;
+  background-color: #0F2F2E;
+  border: none;
+}
+.consultations__img {
+  max-width: 514px;
+  width: 100%;
+  position: absolute;
+  top: -53px;
+  right: 20px;
+}
+.consultations__content {
+  display: flex;
+  padding: 55px 0 76px 60px;
+  position: relative;
+}
+.consultations__buttons {
+  display: flex;
+  justify-content: space-between;
+  max-width: 482px;
+  width: 100%;
+}
+
 /* -----------------------------------------------------------------
                        @media
 1-ый параметр $min-max принимает 3 аргумента min, max, min-max.
