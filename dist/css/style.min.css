@@ -872,6 +872,11 @@ button {
 .ourDoctors__title {
   margin: 30px 0 30px;
 }
+@media all and (max-width: 1200px) {
+  .ourDoctors__wrap {
+    margin: 10px;
+  }
+}
 .ourDoctors__wrapper {
   display: grid;
   grid-template-columns: auto auto auto auto;
@@ -880,6 +885,15 @@ button {
   grid-row-gap: 40px;
   justify-content: center;
   max-height: 1160px;
+}
+@media all and (max-width: 1200px) {
+  .ourDoctors__wrapper {
+    display: flex;
+    max-width: 1180px;
+    flex-wrap: wrap;
+    grid-column-gap: 0;
+    grid-row-gap: 0;
+  }
 }
 
 .breadcrumb {
@@ -899,9 +913,22 @@ button {
   height: 5px;
 }
 
+@media all and (max-width: 680px) {
+  .ourDoctors__wrap > .doctor-none {
+    display: none;
+  }
+}
+
 .consultations__wrap--color {
   background: #53CD8B;
   border-radius: 40px;
+}
+@media all and (max-width: 1016px) {
+  .consultations__wrap--color {
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+  }
 }
 .consultations__wrapper {
   max-width: 600px;
@@ -918,6 +945,19 @@ button {
   max-width: 462px;
   width: 100%;
   text-align: justify;
+}
+@media all and (max-width: 1016px) {
+  .consultations__text {
+    text-align: center;
+    max-width: 100%;
+    margin: 0;
+    margin-bottom: 50px;
+  }
+}
+@media all and (max-width: 450px) {
+  .consultations__text {
+    margin-bottom: 20px;
+  }
 }
 .consultations__button {
   border-color: #0F2F2E;
@@ -937,16 +977,48 @@ button {
   top: -53px;
   right: 20px;
 }
+@media all and (max-width: 1016px) {
+  .consultations__img {
+    position: relative;
+    top: 0;
+    right: 0;
+  }
+}
 .consultations__content {
   display: flex;
   padding: 55px 0 76px 60px;
   position: relative;
+}
+@media all and (max-width: 1016px) {
+  .consultations__content {
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 30px 0 30px;
+  }
+}
+@media all and (max-width: 1016px) {
+  .consultations__title {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+}
+@media all and (max-width: 420px) {
+  .consultations__title {
+    text-align: center;
+    margin-bottom: 20px;
+  }
 }
 .consultations__buttons {
   display: flex;
   justify-content: space-between;
   max-width: 482px;
   width: 100%;
+}
+@media all and (max-width: 1016px) {
+  .consultations__buttons {
+    justify-content: space-around;
+    max-width: 100%;
+  }
 }
 
 /* -----------------------------------------------------------------
@@ -976,6 +1048,12 @@ button {
   font-weight: 400;
   line-height: 18px;
   color: #707777;
+  text-align: left;
+}
+@media all and (max-width: 1066px) {
+  .aboutUs__span {
+    grid-area: 1/1/2/3;
+  }
 }
 .aboutUs__title--color {
   color: #53CD8B;
@@ -983,13 +1061,19 @@ button {
 .aboutUs__title {
   margin-top: 20px;
 }
-.aboutUs__wrapper {
-  width: 100%;
-  max-width: 627px;
+@media all and (max-width: 1066px) {
+  .aboutUs__title {
+    grid-area: 2/1/3/3;
+  }
 }
 .aboutUs__text {
   margin: 40px 0 40px;
   color: #0F2F2E;
+}
+@media all and (max-width: 1066px) {
+  .aboutUs__text {
+    grid-area: 4/1/5/3;
+  }
 }
 .aboutUs__button {
   border-color: #53CD8B;
@@ -997,6 +1081,11 @@ button {
   color: #FFFFFF;
   width: 231px;
   height: 60px;
+}
+@media all and (max-width: 1066px) {
+  .aboutUs__button {
+    grid-area: 5/1/6/3;
+  }
 }
 .aboutUs__button:hover {
   color: #53CD8B;
@@ -1006,12 +1095,28 @@ button {
 .aboutUs__img {
   max-width: 450px;
   width: 100%;
+  grid-area: 1/1/span 6/2;
+}
+@media all and (max-width: 1066px) {
+  .aboutUs__img {
+    grid-area: 3/1/4/3;
+  }
 }
 .aboutUs__content {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   padding-top: 40px;
   justify-items: start;
+}
+@media all and (max-width: 1300px) {
+  .aboutUs__content {
+    justify-items: center;
+  }
+}
+@media all and (max-width: 1066px) {
+  .aboutUs__content {
+    grid-template-columns: repeat(1, 1fr, auto);
+  }
 }
 .aboutUs__wrap {
   max-width: 260px;
@@ -1024,6 +1129,20 @@ button {
   align-items: center;
   justify-content: center;
 }
+@media all and (max-width: 1066px) {
+  .aboutUs__wrap {
+    max-width: 380px;
+    height: 112px;
+    margin: 15px;
+  }
+}
+@media all and (max-width: 600px) {
+  .aboutUs__wrap {
+    max-width: 280px;
+    height: 112px;
+    margin: 5px;
+  }
+}
 .aboutUs__text--small {
   margin-top: 10px;
 }
@@ -1035,6 +1154,20 @@ button {
   position: relative;
   top: -72px;
   left: 288px;
+}
+@media all and (max-width: 1300px) {
+  .aboutUs__wrap-info {
+    left: 160px;
+  }
+}
+@media all and (max-width: 1066px) {
+  .aboutUs__wrap-info {
+    top: 0;
+    left: 0;
+    flex-direction: column;
+    align-items: center;
+    margin: 30px 0 40px;
+  }
 }
 
 .services {
