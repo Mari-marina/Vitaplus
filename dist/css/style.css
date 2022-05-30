@@ -551,7 +551,12 @@ button {
 }
 
 .header {
-  margin-top: 40px;
+  margin: 40px 10px 0;
+}
+@media all and (max-width: 514px) {
+  .header {
+    margin: 10px 10px;
+  }
 }
 .header__background {
   max-width: 1360px;
@@ -565,9 +570,30 @@ button {
   -ms-border-radius: 40px;
   -o-border-radius: 40px;
 }
+@media all and (max-width: 321px) {
+  .header__background {
+    padding-bottom: 26px;
+  }
+}
 .header__wrapper {
   margin-top: 103px;
   display: flex;
+}
+@media all and (max-width: 888px) {
+  .header__wrapper {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+}
+@media all and (max-width: 514px) {
+  .header__wrapper {
+    margin-top: 60px;
+  }
+}
+@media all and (max-width: 320px) {
+  .header__wrapper {
+    margin-top: 0;
+  }
 }
 .header__title--color {
   color: #53CD8B;
@@ -583,11 +609,34 @@ button {
   line-height: 150%;
   margin-top: 40px;
 }
+@media all and (max-width: 888px) {
+  .header__text {
+    text-align: center;
+  }
+}
+@media all and (max-width: 320px) {
+  .header__text {
+    margin-top: 20px;
+    font-size: 12px;
+  }
+}
 .header__btn {
   border-color: #53CD8B;
   color: #53CD8B;
   width: 231px;
   height: 60px;
+}
+@media all and (max-width: 514px) {
+  .header__btn {
+    width: 240px;
+    height: 40px;
+    margin-bottom: 30px;
+  }
+}
+@media all and (max-width: 514px) {
+  .header__btn {
+    margin-bottom: 10px;
+  }
 }
 .header__btn:hover {
   color: #FFFFFF;
@@ -599,6 +648,18 @@ button {
   display: flex;
   justify-content: space-between;
 }
+@media all and (max-width: 514px) {
+  .header__button {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+  }
+}
+@media all and (max-width: 391px) {
+  .header__button {
+    margin-top: 20px;
+  }
+}
 .header__images {
   position: relative;
 }
@@ -607,10 +668,45 @@ button {
   max-width: 778px;
   bottom: -76px;
 }
+@media all and (max-width: 1044px) {
+  .header__img {
+    max-width: 600px;
+    bottom: 6px;
+    left: -39px;
+  }
+}
+@media all and (max-width: 888px) {
+  .header__img {
+    position: relative;
+    width: 100%;
+    left: 30px;
+    margin-bottom: 10px;
+  }
+}
 
 .title {
   line-height: 120%;
   font-style: normal;
+}
+@media all and (max-width: 888px) {
+  .title {
+    text-align: center;
+  }
+}
+@media all and (max-width: 514px) {
+  .title {
+    font-size: 28px;
+  }
+}
+@media all and (max-width: 391px) {
+  .title {
+    font-size: 24px;
+  }
+}
+@media all and (max-width: 321px) {
+  .title {
+    font-size: 22px;
+  }
 }
 
 .nav {
@@ -621,9 +717,48 @@ button {
   margin-top: 82px;
   font-size: 14px;
 }
+@media all and (max-width: 888px) {
+  .nav {
+    padding-top: 40px;
+    max-width: initial;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background: #0F2F2E;
+    transform: translateX(-100%);
+    transition: transform 0.5s ease;
+    -webkit-transform: translateX(-100%);
+    -moz-transform: translateX(-100%);
+    -ms-transform: translateX(-100%);
+    -o-transform: translateX(-100%);
+    -webkit-transition: transform 0.5s ease;
+    -moz-transition: transform 0.5s ease;
+    -ms-transition: transform 0.5s ease;
+    -o-transition: transform 0.5s ease;
+    z-index: 10;
+  }
+}
 .nav__list, .nav__list--bottom, .nav__list__wrap {
   display: flex;
   justify-content: space-between;
+}
+.nav__logo {
+  margin-right: 28px;
+}
+@media all and (max-width: 948px) {
+  .nav__logo {
+    padding: 50px 0 0 50px;
+  }
+}
+@media all and (max-width: 321px) {
+  .nav__logo {
+    padding: 10px 0 0 10px;
+  }
 }
 .nav__list__wrap {
   max-width: 472px;
@@ -685,6 +820,37 @@ button {
   height: 16px;
   top: -2px;
   left: -26px;
+}
+
+.burger {
+  display: none;
+  z-index: 11;
+}
+@media all and (max-width: 888px) {
+  .burger {
+    display: block;
+    margin-right: 20px;
+    width: 60px;
+  }
+}
+@media all and (max-width: 540px) {
+  .burger {
+    width: 40px;
+  }
+}
+@media all and (max-width: 321px) {
+  .burger {
+    margin-right: 10px;
+  }
+}
+
+.nav.active {
+  transform: translateX(0);
+  -webkit-transform: translateX(0);
+  -moz-transform: translateX(0);
+  -ms-transform: translateX(0);
+  -o-transform: translateX(0);
+  z-index: 10;
 }
 
 .ourDoctors__title {
@@ -826,9 +992,10 @@ button {
   width: 100%;
 }
 .aboutUs__content {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 100px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding-top: 40px;
+  justify-items: start;
 }
 .aboutUs__wrap {
   max-width: 260px;
@@ -1380,7 +1547,13 @@ details[open] img {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 44px;
+  padding: 22px 0 22px;
+}
+.registration__title--bottom {
+  padding-bottom: 22px;
+}
+.registration__wrap-description:first-child {
+  border-bottom: 1px solid rgba(15, 47, 46, 0.15);
 }
 
 /* -----------------------------------------------------------------

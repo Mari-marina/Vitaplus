@@ -1,5 +1,8 @@
 .header {
-  margin-top: 40px;
+  margin: 40px 10px 0;
+  @media all and (max-width: 514px) {
+    margin: 10px 10px;
+    }
   &__background {
     max-width: 1360px;
     width: 100%;
@@ -11,10 +14,23 @@
       -moz-border-radius: 40px;
       -ms-border-radius: 40px;
       -o-border-radius: 40px;
+      @media all and (max-width: 321px) {
+        padding-bottom: 26px;
+        }
   }  
   &__wrapper {
     margin-top: 103px;
     display: flex;
+    @media all and (max-width: 888px) {
+      flex-direction: column-reverse;
+      align-items: center;
+      }
+      @media all and (max-width: 514px) {
+        margin-top: 60px;
+        }
+        @media all and (max-width: 320px) {
+          margin-top: 0;
+          }
 }
   &__title--color {
     color: $accentColor;
@@ -29,12 +45,27 @@ font-weight: 400;
 font-size: 16px;
 line-height: 150%;
 margin-top: 40px;
+@media all and (max-width: 888px) {
+  text-align: center;;
+  }
+  @media all and (max-width: 320px) {
+    margin-top: 20px;
+    font-size: 12px;
+    }
   }
   &__btn {
     border-color: $accentColor;
     color: $accentColor;
     width: 231px;
     height: 60px;
+    @media all and (max-width: 514px) {
+      width: 240px;
+    height: 40px;
+    margin-bottom: 30px;
+      }
+      @media all and (max-width: 514px) {
+      margin-bottom: 10px;
+        }
   }
   &__btn:hover {
     color: #FFFFFF;
@@ -45,17 +76,50 @@ margin-top: 40px;
     margin-top: 80px;
     display: flex;
     justify-content: space-between;
+    @media all and (max-width: 514px) {
+      flex-direction: column;
+      align-items: center;
+      margin-top: 50px;
+      }
+      @media all and (max-width: 391px) {
+        margin-top: 20px;
+        }
   }
   &__images {
     position: relative;
+   
   }
   &__img {
     position: absolute;
     max-width: 778px;
     bottom: -76px;
+    @media all and (max-width: 1044px) {
+      max-width: 600px;
+      bottom: 6px;
+    left: -39px;
+    }
+    @media all and (max-width: 888px) {
+      position: relative;
+      width: 100%;
+      left: 30px;
+      margin-bottom: 10px;
+      }
   }
 }
 .title {
   line-height: 120%;
   font-style: normal;
+  @media all and (max-width: 888px) {
+    text-align: center;;
+    }
+    @media all and (max-width: 514px) {
+      font-size: 28px;
+      }
+      @media all and (max-width: 391px) {
+        font-size: 24px;
+        }
+        @media all and (max-width: 321px) {
+          font-size: 22px;
+          }
+        
 }

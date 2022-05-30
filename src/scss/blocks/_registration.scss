@@ -71,6 +71,12 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 44px;
+    padding: 22px 0 22px;
+  }
+  &__title--bottom {
+    padding-bottom: 22px;
+  }
+  &__wrap-description:first-child {
+    border-bottom: 1px solid rgba(15, 47, 46, 0.15);
   }
 }

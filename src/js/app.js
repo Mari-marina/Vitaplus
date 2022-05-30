@@ -1,5 +1,7 @@
 import * as flsFunctions from "./modules/functions.js";
 
+
+
 flsFunctions.isWebp();
 flsFunctions.bodyLockStatus();
 flsFunctions.bodyLockToggle();
@@ -20,3 +22,6 @@ import Swiper, {
 
 // init Swiper:
 const swiper = new Swiper();
+
+
+
