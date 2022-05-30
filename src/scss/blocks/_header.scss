@@ -42,7 +42,6 @@
   &__text {
     font-style: normal;
 font-weight: 400;
-font-size: 16px;
 line-height: 150%;
 margin-top: 40px;
 @media all and (max-width: 888px) {
@@ -50,7 +49,6 @@ margin-top: 40px;
   }
   @media all and (max-width: 320px) {
     margin-top: 20px;
-    font-size: 12px;
     }
   }
   &__btn {
@@ -112,14 +110,5 @@ margin-top: 40px;
   @media all and (max-width: 888px) {
     text-align: center;;
     }
-    @media all and (max-width: 514px) {
-      font-size: 28px;
-      }
-      @media all and (max-width: 391px) {
-        font-size: 24px;
-        }
-        @media all and (max-width: 321px) {
-          font-size: 22px;
-          }
         
 }

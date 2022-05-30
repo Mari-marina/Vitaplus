@@ -1,17 +1,47 @@
 .services {
   margin-top: 100px;
   color: $textColor;
+  @media all and (max-width: 888px) {
+    margin-top: 50px;
+    }
+    @media all and (max-width: 321px) {
+      margin-top: 40px;
+      }
   &__price {
     background: #FFFFFF;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     padding: 20px 60px;
+    @media all and (max-width: 600px) {
+      padding: 20px;
+      };
+      @media all and (max-width: 400px) {
+        padding: 10px 20px;
+        };
+    
   }
   &__name {
     color:#0F2F2E;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     padding: 40px 60px 20px;
+    
+    @media all and (max-width: 724px) {
+      padding: 0 0 10px 0;
+      };
+        @media all and (max-width: 400px) {
+          font-size: 8px;
+          };
+          @media all and (max-width: 600px) {
+            font-size: 12px;
+            };
+  &__text--left  {
+    @media all and (max-width: 724px) {
+      text-align: center;
+       margin-right: 50px;
+      }; 
+  } 
+
   }
   &__text:nth-child(2),
   &__text:nth-child(5),
@@ -32,17 +62,33 @@
   }
   &__summary__img {
     margin-right: 35px;
+    @media all and (max-width: 600px) {
+      margin-right: 0;
+      };
+    
   }
   &__text--left,
   &__text--center,
   &__text--right {
     color: #707777;
   }
+  &__text,
+  &__text--left,
+  &__text--center,
+  &__text--right {
+    @media all and (max-width: 600px) {
+      font-size: 8px;
+      }; 
+  }
   &__button{
     border-color: $accentColor;
     color: $accentColor;
     width: 187px;
     height: 60px;
+    @media all and (max-width: 400px) {
+      width: 140px;
+    height: 40px;;
+      };
   }
   &__button:hover {
     color: #FFFFFF;
@@ -53,6 +99,9 @@
     display: flex;
     justify-content: center;
     margin-top: 40px;
+    @media all and (max-width: 600px) {
+      margin-top: 20px;
+      };
   }
 }
 
@@ -64,7 +113,12 @@ details > summary {
   margin-top: 2px;
   padding: 25px 0 25px 60px;
   display: flex;
-  justify-content: space-between;}
+  justify-content: space-between;
+  @media all and (max-width: 600px) {
+    padding: 10px 20px;
+    };
+  
+}
 
   details > summary::-webkit-details-marker {
     display: none;
@@ -78,3 +132,4 @@ details > summary {
       -o-transform: rotate(180deg);
     }
   }
+
