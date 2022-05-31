@@ -1495,6 +1495,11 @@ details[open] img {
   padding: 0 43px;
   margin-bottom: 20px;
 }
+@media all and (max-width: 846px) {
+  .reviews__forms__input, .reviews__forms__raiting {
+    width: 100%;
+  }
+}
 .reviews__forms__subtitle {
   font-size: 40px;
   font-weight: 400;
@@ -1511,6 +1516,11 @@ details[open] img {
   max-width: 504px;
   width: 100%;
 }
+@media all and (max-width: 846px) {
+  .reviews__forms__text {
+    text-align: center;
+  }
+}
 .reviews__forms__textarea {
   background-color: inherit;
   border-radius: 40px;
@@ -1520,6 +1530,11 @@ details[open] img {
   color: #0F2F2E;
   padding: 12px 43px;
   margin-bottom: 20px;
+}
+@media all and (max-width: 846px) {
+  .reviews__forms__textarea {
+    margin-top: 10px;
+  }
 }
 .reviews__forms__input::placeholder, .reviews__forms__raiting::placeholder, .reviews__forms__textarea::placeholder, .reviews__btn-text {
   font-size: 16px;
@@ -1534,24 +1549,46 @@ details[open] img {
   max-width: 400px;
   width: 100%;
 }
+@media all and (max-width: 846px) {
+  .reviews__forms--left {
+    max-width: 600px;
+  }
+}
 .reviews__forms--right {
   display: flex;
   flex-direction: column;
   max-width: 600px;
   width: 100%;
+  padding-left: 10px;
+}
+.reviews__forms__text--bottom {
+  padding-left: 6px;
 }
 .reviews__forms {
   display: flex;
-  justify-content: space-around;
+  flex-direction: column;
   padding: 60px;
 }
-.reviews__forms__button {
+.reviews__wrap--top, .reviews__forms__content, .reviews__forms__wrap--top {
+  display: flex;
+  justify-content: space-between;
+}
+@media all and (max-width: 846px) {
+  .reviews__wrap--top, .reviews__forms__content, .reviews__forms__wrap--top {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.reviews__forms__button--right {
+  margin-left: 10px;
+}
+.reviews__forms__button--right {
   border-color: #0F2F2E;
   color: #0F2F2E;
   width: 231px;
   height: 60px;
 }
-.reviews__forms__button:hover {
+.reviews__forms__button--right:hover {
   color: #53CD8B;
   background-color: #0F2F2E;
   border: none;
@@ -1561,6 +1598,12 @@ details[open] img {
   align-items: center;
   justify-content: space-between;
 }
+@media all and (max-width: 846px) {
+  .reviews__forms__wrap-button {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
 .reviews__forms__text--bottom {
   max-width: 320px;
   width: 100%;
@@ -1568,6 +1611,11 @@ details[open] img {
   font-weight: 400;
   line-height: 21px;
   color: #FFFFFF;
+}
+@media all and (max-width: 846px) {
+  .reviews__forms__text--bottom {
+    max-width: 600px;
+  }
 }
 .reviews__btn__forms__raiting {
   display: flex;

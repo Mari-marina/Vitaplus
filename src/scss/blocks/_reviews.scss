@@ -73,7 +73,11 @@
     width: 400px;
     color: #0F2F2E;
     padding: 0 43px;
-    margin-bottom: 20px
+    margin-bottom: 20px;
+    @media all and (max-width: 846px) {
+      width: 100%;
+      }
+   
    
   }
   &__forms__subtitle {
@@ -85,6 +89,9 @@
     margin-bottom: 48px;
     max-width: 504px;
     width: 100%;
+    @media all and (max-width: 846px) {
+      text-align: center;
+      }
   }
   &__forms__textarea {
     background-color: inherit;
@@ -95,6 +102,9 @@
     color: #0F2F2E;
     padding: 12px 43px;
     margin-bottom: 20px;
+    @media all and (max-width: 846px) {
+      margin-top: 10px;
+      }
   }
   &__forms__input::placeholder,
   &__forms__raiting::placeholder,
@@ -108,26 +118,46 @@
     flex-direction: column;
     max-width: 400px;
     width: 100%;
+    @media all and (max-width: 846px) {
+      max-width: 600px;
+      }
   }
   &__forms--right {
     display: flex;
     flex-direction: column;
     max-width: 600px;
     width: 100%;
+    padding-left: 10px;
     
+  }
+  &__forms__text--bottom {
+    padding-left: 6px;
   }
   &__forms {
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;;
     padding: 60px;
   }
-  &__forms__button {
+  &__wrap--top,
+  &__forms__content,
+  &__forms__wrap--top {
+    display: flex;
+    justify-content: space-between;
+    @media all and (max-width: 846px) {
+      flex-direction: column;
+    align-items: center;
+      }
+  }
+  &__forms__button--right {
+    margin-left: 10px;
+  }
+  &__forms__button--right {
     border-color: #0F2F2E;
     color: #0F2F2E;
     width: 231px;
     height: 60px;
   }
-  &__forms__button:hover {
+  &__forms__button--right:hover {
     color: $accentColor;
     background-color: #0F2F2E;
     border: none;
@@ -136,11 +166,18 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    @media all and (max-width: 846px) {
+      flex-wrap: wrap;
+      justify-content: center;
+      }
   }
   &__forms__text--bottom {
     max-width: 320px;
     width: 100%;
     @include text(12px, 400, 21px, #FFFFFF);
+    @media all and (max-width: 846px) {
+      max-width: 600px;
+      }
   }
   &__btn__forms__raiting {
     display: flex;
