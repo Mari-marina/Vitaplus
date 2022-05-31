@@ -1653,6 +1653,11 @@ details[open] img {
 .contacts__title {
   margin-top: 30px;
 }
+@media all and (max-width: 1300px) {
+  .contacts {
+    text-align: left;
+  }
+}
 .contacts__block {
   background: #FFFFFF;
   max-width: 560px;
@@ -1724,10 +1729,18 @@ details[open] img {
   -ms-border-radius: 40px;
   -o-border-radius: 40px;
 }
+.contacts__map {
+  margin-top: 40px;
+}
 .contacts__wrapper {
   display: flex;
   justify-content: space-between;
   margin: 40px 0 100px;
+}
+@media all and (max-width: 1300px) {
+  .contacts__wrapper {
+    flex-direction: column;
+  }
 }
 
 .breadcrumbsForCard {
