@@ -1874,6 +1874,24 @@ details[open] img {
   color: #53CD8B;
   font-family: OnestMedium;
 }
+@media all and (max-width: 1300px) {
+  .registration__title-data {
+    padding-right: 20px;
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 140%;
+    color: #53CD8B;
+  }
+}
+@media all and (max-width: 370px) {
+  .registration__title-data {
+    padding-right: 10px;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 140%;
+    color: #53CD8B;
+  }
+}
 .registration__text--bottom, .registration__text {
   color: #0F2F2E;
 }
@@ -1937,6 +1955,15 @@ details[open] img {
   justify-content: space-between;
   padding-top: 122px;
 }
+@media all and (max-width: 870px) {
+  .footer__nav {
+    flex-direction: column;
+    padding: 40px 0 0 50px;
+  }
+}
+.footer__nav__list--second, .footer__nav__list--first {
+  padding-top: 10px;
+}
 .footer__nav__list--first {
   font-size: 14px;
   font-weight: 400;
@@ -1949,11 +1976,27 @@ details[open] img {
   line-height: 20px;
   color: #FFFFFF;
 }
+@media all and (max-width: 450px) {
+  .footer__nav__list--second {
+    padding: 20px 20px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 300px;
+    flex-direction: row;
+    position: relative;
+    right: 49px;
+  }
+}
 .footer__nav__list--first > .footer__nav__item {
   margin-bottom: 24px;
 }
 .footer__nav__list--second > .footer__nav__item {
   margin-bottom: 22px;
+}
+@media all and (max-width: 450px) {
+  .footer__nav__list--second > .footer__nav__item:nth-child(odd) {
+    margin-right: 100px;
+  }
 }
 .footer__button {
   border-color: #53CD8B;
@@ -1961,6 +2004,12 @@ details[open] img {
   width: 231px;
   height: 60px;
   background: #53CD8B;
+}
+@media all and (max-width: 321px) {
+  .footer__button {
+    width: 268px;
+    height: 40px;
+  }
 }
 .footer__group-icon {
   max-width: 122px;
@@ -1981,11 +2030,23 @@ details[open] img {
   display: flex;
   justify-content: space-between;
 }
+@media all and (max-width: 750px) {
+  .footer__bottom {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px 50px 20px;
+  }
+}
 .footer__bottom__text {
   font-size: 16px;
   font-weight: 400;
   line-height: 20px;
   color: #707777;
+}
+@media all and (max-width: 750px) {
+  .footer__bottom__text {
+    margin-top: 20px;
+  }
 }
 .footer__bottom__link {
   font-size: 16px;
@@ -1993,4 +2054,23 @@ details[open] img {
   line-height: 20px;
   color: #53CD8B;
   text-decoration: underline;
+}
+@media all and (max-width: 750px) {
+  .footer__bottom__link {
+    margin: 20px 0 20px;
+  }
+}
+@media all and (max-width: 870px) {
+  .footer__logo {
+    width: 100px;
+  }
+}
+@media all and (max-width: 321px) {
+  .footer__wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    right: 30px;
+  }
 }

@@ -86,6 +86,14 @@
   &__title-data {
     @include text(40px, 500, 140%, $accentColor);
     font-family: OnestMedium;
+    @media all and (max-width: 1300px) {
+      padding-right: 20px;
+      @include text(28px, 500, 140%, $accentColor);
+      }
+      @media all and (max-width: 370px) {
+        padding-right: 10px;
+        @include text(20px, 500, 140%, $accentColor);
+        }
   }
   &__text--bottom,
   &__text {
