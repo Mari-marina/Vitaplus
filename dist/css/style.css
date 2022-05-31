@@ -738,6 +738,7 @@ button {
     padding-top: 40px;
     max-width: initial;
     position: fixed;
+    margin-top: 0;
     top: 0;
     left: 0;
     height: 100vh;
@@ -763,6 +764,18 @@ button {
   display: flex;
   justify-content: space-between;
 }
+@media all and (max-width: 888px) {
+  .nav__list, .nav__list--bottom, .nav__list__wrap {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media all and (max-width: 888px) {
+  .nav__list {
+    color: #707777;
+    font-size: 30px;
+  }
+}
 .nav__logo {
   margin-right: 28px;
 }
@@ -780,6 +793,12 @@ button {
   max-width: 472px;
   width: 100%;
 }
+@media all and (max-width: 888px) {
+  .nav__list__wrap {
+    color: #FFFFFF;
+    font-size: 30px;
+  }
+}
 .nav__list--bottom {
   margin-top: 42px;
 }
@@ -790,6 +809,12 @@ button {
 }
 .nav__link {
   font-family: OnestMedium;
+}
+@media all and (max-width: 888px) {
+  .nav__link--bottom {
+    font-size: 28px;
+    color: #53CD8B;
+  }
 }
 .nav__item--first, .nav__item--second, .nav__item--third, .nav__item--fourth, .nav__item--bottom {
   position: relative;
@@ -837,10 +862,23 @@ button {
   top: -2px;
   left: -26px;
 }
+@media all and (max-width: 888px) {
+  .nav__item--bottom:first-child:before {
+    background-image: none;
+  }
+}
+
+.burger.active {
+  background: url(../../../img/close.svg) no-repeat center;
+}
 
 .burger {
   display: none;
   z-index: 11;
+  width: 40px;
+  height: 40px;
+  background: url(../../../img/burger.svg) no-repeat center;
+  cursor: pointer;
 }
 @media all and (max-width: 888px) {
   .burger {
@@ -867,6 +905,9 @@ button {
   -ms-transform: translateX(0);
   -o-transform: translateX(0);
   z-index: 10;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: flex-end;
 }
 
 .ourDoctors__title {
