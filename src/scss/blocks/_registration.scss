@@ -27,6 +27,12 @@
   &__text--green{
     @include text(16px, 400, 24px, $accentColor);
   }
+  &__title {
+    grid-area: 1/1/2/2;
+    @media all and (max-width: 1300px) {
+      grid-area: 1/1/2/3;
+      }
+  }
   &__wrap {
     max-width: 660px;
     width: 100%;
@@ -39,21 +45,43 @@
     background: $accentColor;
     border: none;
     margin-top: 48px;
+    @media all and (max-width: 1300px) {
+      grid-area: 5/1/6/3;
+      margin: 0 auto;
+      width: 280px;
+      }
+      @media all and (max-width: 500px) {
+        height: 40px;
+        }
   }
   &__img {
     max-width: 460px;
     width: 100%;
+    grid-area: 1/2/5/3;
+    padding-left: 20px;
+    @media all and (max-width: 1300px) {
+      grid-area: 3/1/4/3;
+      margin: 0 auto;
+      padding: 0 0 20px;
+      }
   }
   &__wrapper {
     margin-top: 50px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     padding-top: 40px;
-    justify-items: end;
     margin-bottom: 80px;
+    // @media all and (max-width: 1300px) {
+    //   max-width: 900px;
+    //   width: 100px;
+    //   margin: 0 auto;
+    //   }
   }
   &__text--green {
   margin: 20px 0 40px;
+  @media all and (max-width: 1300px) {
+    grid-area: 2/1/3/3;
+    }
   }
   &__title-data {
     @include text(40px, 500, 140%, $accentColor);
@@ -62,6 +90,12 @@
   &__text--bottom,
   &__text {
     color: #0F2F2E;
+  }
+  &__text {
+    @media all and (max-width: 1300px) {
+      grid-area: 4/1/5/3;
+      margin-bottom: 20px;
+      }
   }
   &__text--bottom {
     max-width: 860px;

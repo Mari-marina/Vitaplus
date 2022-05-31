@@ -1664,6 +1664,11 @@ details[open] img {
   width: 100%;
   border-radius: 40px;
 }
+@media all and (max-width: 1300px) {
+  .contacts__block {
+    max-width: 700px;
+  }
+}
 .contacts__nav__list {
   display: flex;
   flex-direction: column;
@@ -1729,8 +1734,12 @@ details[open] img {
   -ms-border-radius: 40px;
   -o-border-radius: 40px;
 }
-.contacts__map {
-  margin-top: 40px;
+@media all and (max-width: 1300px) {
+  .contacts__map {
+    margin-top: 40px;
+    max-width: 700px;
+    width: 100%;
+  }
 }
 .contacts__wrapper {
   display: flex;
@@ -1740,6 +1749,7 @@ details[open] img {
 @media all and (max-width: 1300px) {
   .contacts__wrapper {
     flex-direction: column;
+    align-items: center;
   }
 }
 
@@ -1796,6 +1806,14 @@ details[open] img {
   line-height: 24px;
   color: #53CD8B;
 }
+.registration__title {
+  grid-area: 1/1/2/2;
+}
+@media all and (max-width: 1300px) {
+  .registration__title {
+    grid-area: 1/1/2/3;
+  }
+}
 .registration__wrap {
   max-width: 660px;
   width: 100%;
@@ -1809,20 +1827,45 @@ details[open] img {
   border: none;
   margin-top: 48px;
 }
+@media all and (max-width: 1300px) {
+  .registration__btn {
+    grid-area: 5/1/6/3;
+    margin: 0 auto;
+    width: 280px;
+  }
+}
+@media all and (max-width: 500px) {
+  .registration__btn {
+    height: 40px;
+  }
+}
 .registration__img {
   max-width: 460px;
   width: 100%;
+  grid-area: 1/2/5/3;
+  padding-left: 20px;
+}
+@media all and (max-width: 1300px) {
+  .registration__img {
+    grid-area: 3/1/4/3;
+    margin: 0 auto;
+    padding: 0 0 20px;
+  }
 }
 .registration__wrapper {
   margin-top: 50px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   padding-top: 40px;
-  justify-items: end;
   margin-bottom: 80px;
 }
 .registration__text--green {
   margin: 20px 0 40px;
+}
+@media all and (max-width: 1300px) {
+  .registration__text--green {
+    grid-area: 2/1/3/3;
+  }
 }
 .registration__title-data {
   font-size: 40px;
@@ -1833,6 +1876,12 @@ details[open] img {
 }
 .registration__text--bottom, .registration__text {
   color: #0F2F2E;
+}
+@media all and (max-width: 1300px) {
+  .registration__text {
+    grid-area: 4/1/5/3;
+    margin-bottom: 20px;
+  }
 }
 .registration__text--bottom {
   max-width: 860px;
