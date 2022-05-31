@@ -893,6 +893,7 @@ button {
     flex-wrap: wrap;
     grid-column-gap: 0;
     grid-row-gap: 0;
+    max-height: 100%;
   }
 }
 
@@ -1420,6 +1421,11 @@ details[open] img {
   line-height: 150%;
   color: #0F2F2E;
 }
+@media all and (max-width: 670px) {
+  .reviews__title {
+    margin: 30px 0 30px;
+  }
+}
 .reviews__wrapper-background {
   max-width: 560px;
   width: 100%;
@@ -1452,6 +1458,14 @@ details[open] img {
   grid-column-gap: 40px;
   grid-row-gap: 40px;
   margin-bottom: 40px;
+}
+@media all and (max-width: 670px) {
+  .reviews__blocks {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    grid-row-gap: 10px;
+  }
 }
 .reviews__button {
   border-color: #0F2F2E;
