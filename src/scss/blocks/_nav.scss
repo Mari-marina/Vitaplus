@@ -203,6 +203,7 @@
   background: url(../../../img/burger.svg) no-repeat center;
   cursor: pointer;
   @media all and (max-width: 888px) {
+    position: fixed;
     display: block;
     margin-right: 20px;
     width: 60px;

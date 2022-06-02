@@ -6,6 +6,9 @@
     @media all and (max-width: 1200px) {
       margin: 10px;
       }
+      @media all and (max-width: 657px) {
+        margin-right: 0;
+        }
   }
   &__wrapper{
     display: grid;
@@ -49,4 +52,10 @@
     display: none
     }
 
+}
+
+div > .doctor-none {
+  @media all and (max-width: 657px) {
+    display: none;
+    }
 }

@@ -10,6 +10,9 @@
 	line-height: 1;
 	color: lightgrey;
 	text-shadow: 1px 1px #bbb;
+	@media all and (max-width: 540px) {
+		font-size: 20px;
+		}
 }
 .rating-result > span:before,
 .rating-result--white > span:before {

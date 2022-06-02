@@ -103,6 +103,10 @@
     height: 60px;
     background: #FFFFFF;
     border: none;
+    @media all and (max-width: 770px) {
+        width: 40px;
+    height: 40px;
+        }
     
 }
 .slick-arrow:hover {
@@ -123,14 +127,20 @@ button > .slick-next {
     top: -88px;
     right: 88px;
     @media all and (max-width: 770px) {
-        top: 424px;
+        top: 423px;
         }
+        @media all and (max-width: 450px) {
+            right: 76px;
+            }
 }
 .slick-next {
     position: absolute;
     top: -88px;
     right: 0px;
     @media all and (max-width: 770px) {
-        top: 424px;
+        top: 423px;
         }
+}
+.slick-slide {
+    margin-right: 40px;
 }
