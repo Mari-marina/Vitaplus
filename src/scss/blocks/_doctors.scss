@@ -50,6 +50,7 @@
     height: 60px;
     margin: 0 auto;
     display: block;
+    margin-top: 40px;
   }
   &__main-button:hover {
     color: #FFFFFF;
@@ -60,4 +61,22 @@
 
 .slick-initialized .slick-slide {
   display: flex;
+}
+.slider {
+  position: relative;
+}
+
+
+button > .slick-prev, 
+button > .slick-next {
+  position: absolute;
+}
+
+button > .slick-next {
+    top: -89px;
+    right: 20px;
+}
+button > .slick-prev {
+    top: -89px;
+    right: 98px;
 }

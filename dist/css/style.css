@@ -1439,6 +1439,7 @@ details[open] img {
   height: 60px;
   margin: 0 auto;
   display: block;
+  margin-top: 40px;
 }
 .doctors__main-button:hover {
   color: #FFFFFF;
@@ -1448,6 +1449,25 @@ details[open] img {
 
 .slick-initialized .slick-slide {
   display: flex;
+}
+
+.slider {
+  position: relative;
+}
+
+button > .slick-prev,
+button > .slick-next {
+  position: absolute;
+}
+
+button > .slick-next {
+  top: -89px;
+  right: 20px;
+}
+
+button > .slick-prev {
+  top: -89px;
+  right: 98px;
 }
 
 /* -----------------------------------------------------------------
@@ -2060,6 +2080,35 @@ details[open] img {
 
 .slick-arrow.slick-hidden {
   display: none;
+}
+
+.slick-arrow {
+  width: 60px;
+  height: 60px;
+  background: #FFFFFF;
+  border: none;
+}
+
+.slick-arrow:hover {
+  background: #53CD8B;
+  border: none;
+}
+
+button > .slick-prev,
+button > .slick-next {
+  position: absolute;
+}
+
+.slick-prev {
+  position: absolute;
+  top: -88px;
+  right: 88px;
+}
+
+.slick-next {
+  position: absolute;
+  top: -88px;
+  right: 0px;
 }
 
 /* -----------------------------------------------------------------

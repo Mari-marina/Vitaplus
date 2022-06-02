@@ -81,9 +81,7 @@
         pointer-events: none;
     }
 
-    // .slick-initialized & {
-    //     display: block;
-    // }
+    
 
     .slick-loading & {
         visibility: hidden;
@@ -97,4 +95,36 @@
 }
 .slick-arrow.slick-hidden {
     display: none;
+}
+
+
+.slick-arrow {
+    width: 60px;
+    height: 60px;
+    background: #FFFFFF;
+    border: none;
+    
+}
+.slick-arrow:hover {
+    background: #53CD8B;
+    border: none;
+    
+}
+
+
+button > .slick-prev, 
+button > .slick-next {
+  position: absolute;
+}
+
+
+.slick-prev {
+    position: absolute;
+    top: -88px;
+    right: 88px;
+}
+.slick-next {
+    position: absolute;
+    top: -88px;
+    right: 0px;
 }
