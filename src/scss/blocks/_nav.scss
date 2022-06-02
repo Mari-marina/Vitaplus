@@ -150,6 +150,8 @@
 }
 .burger {
   display: none;
+  position: fixed;
+  right: 46px;
   z-index: 11;
   width: 40px;
   height: 40px;

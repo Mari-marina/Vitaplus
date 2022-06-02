@@ -1,5 +1,6 @@
 @import './../../scss/abstracts/_mixins';
 .doctors {
+ 
   margin-top: 100px;
   &__title {
     margin-bottom: 40px;
@@ -13,6 +14,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-right: 40px;
   }
   &__img {
     width: 120px;
@@ -29,11 +31,13 @@
   }
   &__button {
     border-color: $accentColor;
-    background-color: $accentColor;;
+    background-color: $accentColor;
     color: #FFFFFF;
     width: 178px;
     height: 40px;
-  }
+    margin-bottom: 36px;
+    
+}
   &__button:hover {
     color: $accentColor; 
     background-color: inherit;
@@ -52,4 +56,8 @@
     background-color: $accentColor;
     border: none;
   }
+}
+
+.slick-initialized .slick-slide {
+  display: flex;
 }
