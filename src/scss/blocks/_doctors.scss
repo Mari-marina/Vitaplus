@@ -4,6 +4,9 @@
   margin-top: 100px;
   &__title {
     margin-bottom: 40px;
+    @media all and (max-width: 440px) {
+      text-align: left;
+      }
   }
   &__wrap {
     background: #FFFFFF;
@@ -24,6 +27,7 @@
     text-align: center;
     @include text(16px, 500, 24px, #0F2F2E);
     margin-bottom: 15px;
+    
   }
   &__text {
     color: $accentColor;
@@ -51,6 +55,10 @@
     margin: 0 auto;
     display: block;
     margin-top: 40px;
+    @media all and (max-width: 770px) {
+      margin: 0;
+      margin-top: 40px;
+      }
   }
   &__main-button:hover {
     color: #FFFFFF;

@@ -11,6 +11,10 @@
   &__wrapper{
      max-width: 600px;
      width: 100%;
+     @media all and (max-width: 320px)  {
+      max-height: 244px;
+      height: 100%;
+    }
   }
   &__title--color {
     color: #0F2F2E;
@@ -40,6 +44,15 @@
     color: #0F2F2E;
     width: 231px;
     height: 60px;
+    @media all and (max-width: 450px)  {
+      width: 240px;
+      height: 40px;
+    }
+  }
+  &__button:first-child {
+    @media all and (max-width: 450px)  {
+      margin-bottom: 10px;
+    }
   }
   &__button:hover {
     color: $accentColor;
@@ -54,7 +67,7 @@
     right: 20px;
     @media all and (max-width: 1016px) {
       position: relative;
-      top: 0;
+      top: 85px;
     right: 0;
       }
   }
@@ -86,5 +99,11 @@
     @media all and (max-width: 1016px) {
       justify-content: space-around;
       max-width: 100%;
-  }}
+  }
+  @media all and (max-width: 450px) {
+    flex-direction: column;
+    align-items: center;
+}
+
+}
 }

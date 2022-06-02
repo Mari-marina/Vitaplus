@@ -85,7 +85,7 @@ text-align: left;
       height: 112px;
       margin: 5px ;
       }
-  
+      
 }
 &__text--small{
   margin-top: 10px;
@@ -108,5 +108,8 @@ text-align: left;
       align-items: center;
       margin: 30px 0 40px;
       }
+      @media all and (max-width: 420px) {
+        margin: 0px 0 40px;
+        }
 }
 }

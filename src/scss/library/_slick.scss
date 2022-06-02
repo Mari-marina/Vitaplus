@@ -122,9 +122,15 @@ button > .slick-next {
     position: absolute;
     top: -88px;
     right: 88px;
+    @media all and (max-width: 770px) {
+        top: 424px;
+        }
 }
 .slick-next {
     position: absolute;
     top: -88px;
     right: 0px;
+    @media all and (max-width: 770px) {
+        top: 424px;
+        }
 }

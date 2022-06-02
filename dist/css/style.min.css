@@ -1055,6 +1055,12 @@ button {
   max-width: 600px;
   width: 100%;
 }
+@media all and (max-width: 320px) {
+  .consultations__wrapper {
+    max-height: 244px;
+    height: 100%;
+  }
+}
 .consultations__title--color {
   color: #0F2F2E;
 }
@@ -1086,6 +1092,17 @@ button {
   width: 231px;
   height: 60px;
 }
+@media all and (max-width: 450px) {
+  .consultations__button {
+    width: 240px;
+    height: 40px;
+  }
+}
+@media all and (max-width: 450px) {
+  .consultations__button:first-child {
+    margin-bottom: 10px;
+  }
+}
 .consultations__button:hover {
   color: #53CD8B;
   background-color: #0F2F2E;
@@ -1101,7 +1118,7 @@ button {
 @media all and (max-width: 1016px) {
   .consultations__img {
     position: relative;
-    top: 0;
+    top: 85px;
     right: 0;
   }
 }
@@ -1139,6 +1156,12 @@ button {
   .consultations__buttons {
     justify-content: space-around;
     max-width: 100%;
+  }
+}
+@media all and (max-width: 450px) {
+  .consultations__buttons {
+    flex-direction: column;
+    align-items: center;
   }
 }
 
@@ -1292,6 +1315,11 @@ button {
     flex-direction: column;
     align-items: center;
     margin: 30px 0 40px;
+  }
+}
+@media all and (max-width: 420px) {
+  .aboutUs__wrap-info {
+    margin: 0px 0 40px;
   }
 }
 
@@ -1464,6 +1492,11 @@ details[open] img {
 .doctors__title {
   margin-bottom: 40px;
 }
+@media all and (max-width: 440px) {
+  .doctors__title {
+    text-align: left;
+  }
+}
 .doctors__wrap {
   background: #FFFFFF;
   max-width: 260px;
@@ -1512,6 +1545,12 @@ details[open] img {
   margin: 0 auto;
   display: block;
   margin-top: 40px;
+}
+@media all and (max-width: 770px) {
+  .doctors__main-button {
+    margin: 0;
+    margin-top: 40px;
+  }
 }
 .doctors__main-button:hover {
   color: #FFFFFF;
@@ -2176,11 +2215,21 @@ button > .slick-next {
   top: -88px;
   right: 88px;
 }
+@media all and (max-width: 770px) {
+  .slick-prev {
+    top: 424px;
+  }
+}
 
 .slick-next {
   position: absolute;
   top: -88px;
   right: 0px;
+}
+@media all and (max-width: 770px) {
+  .slick-next {
+    top: 424px;
+  }
 }
 
 /* -----------------------------------------------------------------
