@@ -127,10 +127,13 @@ button > .slick-next {
     top: -88px;
     right: 88px;
     @media all and (max-width: 770px) {
-        top: 423px;
+        top: 456px;
         }
         @media all and (max-width: 450px) {
             right: 76px;
+            }
+            @media all and (max-width: 400px) {
+                top: 438px; 
             }
 }
 .slick-next {
@@ -138,7 +141,10 @@ button > .slick-next {
     top: -88px;
     right: 0px;
     @media all and (max-width: 770px) {
-        top: 423px;
+        top: 456px;
+        }
+        @media all and (max-width: 400px) {
+            top: 438px; 
         }
 }
 .slick-slide {
@@ -146,6 +152,7 @@ button > .slick-next {
     @media all and (max-width: 400px) {
         margin: 0 5px; 
     }
+    
 }
 
 .slider-track {

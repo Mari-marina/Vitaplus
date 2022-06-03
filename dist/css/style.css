@@ -1550,6 +1550,7 @@ details[open] img {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 10px;
 }
 .doctors__img {
   width: 120px;
@@ -1563,9 +1564,18 @@ details[open] img {
   color: #0F2F2E;
   margin-bottom: 15px;
 }
+@media all and (max-width: 321px) {
+  .doctors__subtitle {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 24px;
+    color: #0F2F2E;
+  }
+}
 .doctors__text {
   color: #53CD8B;
   margin-bottom: 30px;
+  font-size: 12px;
 }
 .doctors__button {
   border-color: #53CD8B;
@@ -2360,12 +2370,17 @@ button > .slick-next {
 }
 @media all and (max-width: 770px) {
   .slick-prev {
-    top: 423px;
+    top: 456px;
   }
 }
 @media all and (max-width: 450px) {
   .slick-prev {
     right: 76px;
+  }
+}
+@media all and (max-width: 400px) {
+  .slick-prev {
+    top: 438px;
   }
 }
 
@@ -2376,7 +2391,12 @@ button > .slick-next {
 }
 @media all and (max-width: 770px) {
   .slick-next {
-    top: 423px;
+    top: 456px;
+  }
+}
+@media all and (max-width: 400px) {
+  .slick-next {
+    top: 438px;
   }
 }
 

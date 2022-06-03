@@ -17,7 +17,10 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    // margin-right: 40px;
+    padding: 10px;
+    // @media all and (max-width: 321px) {
+    //   max-width: 206px;
+    //   }
   }
   &__img {
     width: 120px;
@@ -27,11 +30,14 @@
     text-align: center;
     @include text(16px, 500, 24px, #0F2F2E);
     margin-bottom: 15px;
-    
+    @media all and (max-width: 321px) {
+      @include text(12px, 500, 24px, #0F2F2E);
+      }
   }
   &__text {
     color: $accentColor;
     margin-bottom: 30px;
+    font-size: 12px;
   }
   &__button {
     border-color: $accentColor;
