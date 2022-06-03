@@ -144,3 +144,11 @@ button > .slick-next {
 .slick-slide {
     margin-right: 40px;
 }
+
+.slider-track {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    }
+.slick-slide { margin: 0 20px;}
+.slider-item img { max-width: 100%;}

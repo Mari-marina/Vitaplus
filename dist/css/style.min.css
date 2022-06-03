@@ -993,6 +993,35 @@ button {
   z-index: 10;
 }
 
+.nav__logo_mobile {
+  display: none;
+}
+@media all and (max-width: 888px) {
+  .nav__logo_mobile {
+    display: block;
+    z-index: 30px;
+    position: absolute;
+    left: 30px;
+    top: 100px;
+  }
+}
+@media all and (max-width: 512px) {
+  .nav__logo_mobile {
+    top: 80px;
+  }
+}
+@media all and (max-width: 410px) {
+  .nav__logo_mobile {
+    top: 46px;
+  }
+}
+@media all and (max-width: 321px) {
+  .nav__logo_mobile {
+    width: 40px;
+    top: 22px;
+  }
+}
+
 .ourDoctors__title {
   margin: 30px 0 30px;
 }
@@ -2348,6 +2377,20 @@ button > .slick-next {
 
 .slick-slide {
   margin-right: 40px;
+}
+
+.slider-track {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+.slick-slide {
+  margin: 0 20px;
+}
+
+.slider-item img {
+  max-width: 100%;
 }
 
 /* -----------------------------------------------------------------
