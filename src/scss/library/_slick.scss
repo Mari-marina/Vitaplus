@@ -142,7 +142,7 @@ button > .slick-next {
         }
 }
 .slick-slide {
-    margin-right: 40px;
+    margin: 0 20px;
 }
 
 .slider-track {
@@ -150,5 +150,5 @@ button > .slick-next {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     }
-.slick-slide { margin: 0 20px;}
+// .slick-slide { padding: 0 20px;}
 .slider-item img { max-width: 100%;}
