@@ -101,6 +101,12 @@ padding-top: 122px;
   &__logo {
     @media all and (max-width: 870px) {
       width: 100px;
+      top: -16px;
+    right: 36px;
+    position: relative;
+      }
+      @media (max-width: 420px) {
+        width: 60px;
       }
   }
   &__wrap {
@@ -112,4 +118,49 @@ padding-top: 122px;
     right: 30px;
       }
   }
+  &__nav__item {
+    position: relative;
+  }
+}
+.item--first,
+.item--second,
+.item--third,
+.item--fourth {
+  position: relative;
+}
+
+.item--first:before,
+.item--second:before,
+.item--third:before,
+.item--fourth:before {
+  position: absolute;
+  content: "";
+}
+.item--first:before {
+  background-image: url(../../../img/icons/location.svg);
+  width: 14px;
+  height: 18px;
+  top: -2px;
+  left: -22px;
+}
+.item--second:before {
+  background-image: url(../../../img/icons/letter.svg);
+  width: 19px;
+  height: 14px;
+  top: 1px;
+  left: -27px;
+}
+.item--third:before {
+  background-image: url(../../../img/icons/watch.svg);
+  width: 16px;
+  height: 16px;
+  top: 0px;
+  left: -24px;
+}
+.item--fourth:before {
+  background-image: url(../../../img/icons/phone.svg);
+  width: 16px;
+  height: 16px;
+  top: -1px;
+  left: -22px;
 }
