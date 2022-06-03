@@ -744,7 +744,7 @@ button {
   margin-top: 82px;
   font-size: 14px;
 }
-@media all and (max-width: 888px) {
+@media all and (max-width: 900px) {
   .nav {
     padding-top: 164px;
     max-width: initial;
@@ -785,13 +785,13 @@ button {
   display: flex;
   justify-content: space-between;
 }
-@media all and (max-width: 888px) {
+@media all and (max-width: 900px) {
   .nav__list, .nav__list--bottom, .nav__list__wrap {
     flex-direction: column;
     align-items: center;
   }
 }
-@media all and (max-width: 888px) {
+@media all and (max-width: 900px) {
   .nav__list {
     color: #707777;
     font-size: 30px;
@@ -834,7 +834,7 @@ button {
   max-width: 472px;
   width: 100%;
 }
-@media all and (max-width: 888px) {
+@media all and (max-width: 900px) {
   .nav__list__wrap {
     color: #FFFFFF;
     font-size: 30px;
@@ -861,7 +861,7 @@ button {
 .nav__link {
   font-family: OnestMedium;
 }
-@media all and (max-width: 888px) {
+@media all and (max-width: 900px) {
   .nav__link--bottom {
     font-size: 28px;
     color: #53CD8B;
@@ -875,7 +875,7 @@ button {
 .nav__item--first, .nav__item--second, .nav__item--third, .nav__item--fourth, .nav__item--bottom {
   position: relative;
 }
-@media all and (max-width: 888px) {
+@media all and (max-width: 900px) {
   .nav__item--first, .nav__item--second, .nav__item--third, .nav__item--fourth, .nav__item--bottom {
     padding-bottom: 30px;
   }
@@ -903,7 +903,7 @@ button {
   top: -2px;
   left: -22px;
 }
-@media all and (max-width: 888px) {
+@media all and (max-width: 900px) {
   .nav__item--first:before {
     top: 6px;
     left: 38px;
@@ -945,7 +945,7 @@ button {
   top: -2px;
   left: -26px;
 }
-@media all and (max-width: 888px) {
+@media all and (max-width: 900px) {
   .nav__item--bottom:first-child:before {
     background-image: none;
   }
@@ -964,7 +964,7 @@ button {
   background: url(../../../img/burger.svg) no-repeat center;
   cursor: pointer;
 }
-@media all and (max-width: 888px) {
+@media all and (max-width: 900px) {
   .burger {
     position: fixed;
     display: block;
@@ -996,7 +996,7 @@ button {
 .nav__logo_mobile {
   display: none;
 }
-@media all and (max-width: 888px) {
+@media all and (max-width: 900px) {
   .nav__logo_mobile {
     display: block;
     z-index: 30px;
@@ -1007,7 +1007,7 @@ button {
 }
 @media all and (max-width: 512px) {
   .nav__logo_mobile {
-    top: 80px;
+    top: 46px;
   }
 }
 @media all and (max-width: 410px) {
@@ -1723,6 +1723,11 @@ button > .slick-prev {
   background: #53CD8B;
   border-radius: 40px;
   margin-top: 100px;
+}
+@media all and (max-width: 540px) {
+  .reviews__wrap-background {
+    margin-top: 50px;
+  }
 }
 .reviews__forms__input, .reviews__forms__raiting {
   border-radius: 40px;
