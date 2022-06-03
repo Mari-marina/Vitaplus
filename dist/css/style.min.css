@@ -754,8 +754,8 @@ button {
     left: 0;
     height: 100vh;
     width: 100vw;
-    flex-direction: column;
-    justify-content: flex-start;
+    flex-direction: column-reverse;
+    justify-content: flex-end;
     align-items: center;
     background: #0F2F2E;
     transform: translateX(-100%);
@@ -991,9 +991,6 @@ button {
   -ms-transform: translateX(0);
   -o-transform: translateX(0);
   z-index: 10;
-  display: flex;
-  flex-direction: column-reverse;
-  justify-content: flex-end;
 }
 
 .ourDoctors__title {
