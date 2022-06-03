@@ -143,6 +143,9 @@ button > .slick-next {
 }
 .slick-slide {
     margin: 0 20px;
+    @media all and (max-width: 400px) {
+        margin: 0 5px; 
+    }
 }
 
 .slider-track {
@@ -151,4 +154,4 @@ button > .slick-next {
     -webkit-box-sizing: border-box;
     }
 // .slick-slide { padding: 0 20px;}
-.slider-item img { max-width: 100%;}
+.slider-item div { max-width: 100%;}

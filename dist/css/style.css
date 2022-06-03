@@ -2383,6 +2383,11 @@ button > .slick-next {
 .slick-slide {
   margin: 0 20px;
 }
+@media all and (max-width: 400px) {
+  .slick-slide {
+    margin: 0 5px;
+  }
+}
 
 .slider-track {
   box-sizing: border-box;
@@ -2390,7 +2395,7 @@ button > .slick-next {
   -webkit-box-sizing: border-box;
 }
 
-.slider-item img {
+.slider-item div {
   max-width: 100%;
 }
 

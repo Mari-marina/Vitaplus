@@ -68,8 +68,14 @@ $('.slider').slick({
       breakpoint: 600,
       settings: {
         slidesToShow: 1,
-        slidesToScroll: 1,
         centerMode: true,
+      }
+    },
+    {
+      breakpoint: 380,
+      settings: {
+        slidesToShow: 1,
+        centerMode: false,
       }
     }
   ]
