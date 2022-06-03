@@ -697,6 +697,11 @@ button {
     margin-top: 50px;
   }
 }
+@media all and (max-width: 450px) {
+  .header__button {
+    margin-top: 40px;
+  }
+}
 @media all and (max-width: 391px) {
   .header__button {
     margin-top: 20px;
@@ -1099,7 +1104,7 @@ button {
   max-width: 600px;
   width: 100%;
 }
-@media all and (max-width: 320px) {
+@media all and (max-width: 450px) {
   .consultations__wrapper {
     max-height: 244px;
     height: 100%;

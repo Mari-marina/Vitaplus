@@ -11,10 +11,11 @@
   &__wrapper{
      max-width: 600px;
      width: 100%;
-     @media all and (max-width: 320px)  {
+     @media all and (max-width: 450px)  {
       max-height: 244px;
       height: 100%;
     }
+    
   }
   &__title--color {
     color: #0F2F2E;
